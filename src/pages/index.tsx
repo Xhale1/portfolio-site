@@ -29,21 +29,33 @@ export default function Index() {
       <Typography variant="h1">Hello.</Typography>
       <Box mt={6}>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={4}>
-            <ProjectTile image="/assets/ImageSquare.jpg" />
+          <Grid item xs={12}>
+            <ProjectTile
+              title="01. HelloCampus"
+              titleColor="#0064E9"
+              image="/assets/HelloCampusHero.png"
+              description="HelloCampus helps students share and discover events across their college campus. One of its core features is a beautiful native iOS app written in Swift."
+              descriptionWidth={6}
+            />
           </Grid>
-          <Grid item xs={12} md={8}>
-            <ProjectTile image="/assets/ImageRectangle.jpg" />
+          <Grid item xs={12} md={6}>
+            <ProjectTile
+              title="02. Turtle Fly"
+              titleColor="#27ae60"
+              image="/assets/ImageRectangle.jpg"
+              description="Turtle Fly was #1 in the App Store in 2011. I aquired it in 2016 and grew the downloads by 500% and the revenue by 700%."
+              descriptionWidth={12}
+            />
+          </Grid>
+          {/* <Grid item xs>
+            <ProjectTile image="/assets/ImageSquare.jpg" />
           </Grid>
           <Grid item xs>
             <ProjectTile image="/assets/ImageSquare.jpg" />
           </Grid>
           <Grid item xs>
             <ProjectTile image="/assets/ImageSquare.jpg" />
-          </Grid>
-          <Grid item xs>
-            <ProjectTile image="/assets/ImageSquare.jpg" />
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
     </Container>
