@@ -1,6 +1,6 @@
 {
-  "name": "nextjs-with-typescript",
-  "version": "4.0.0",
+  "name": "portfolio-site",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next",

@@ -25,6 +25,17 @@ const theme = createMuiTheme({
     fontWeightMedium: 600,
     fontFamily: "'Nunito', sans-serif",
     fontSize: 17,
+
+    h1: {
+      fontSize: "3rem",
+      fontWeight: 600,
+      color: "#333333",
+    },
+    h2: {
+      fontSize: "2.2rem",
+      fontWeight: 400,
+      color: "#333333",
+    },
   },
 });
 

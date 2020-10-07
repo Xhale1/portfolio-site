@@ -5,6 +5,8 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import themeThing from "../theme";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import Box from "@material-ui/core/Box";
 
 export default function MyApp(props: AppProps) {
   const { Component, pageProps } = props;
@@ -29,10 +31,13 @@ export default function MyApp(props: AppProps) {
       <ThemeProvider theme={themeThing}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
+        <Box bgcolor="#f7f7f7">
+          <NavBar />
 
-        <NavBar />
+          <Component {...pageProps} />
 
-        <Component {...pageProps} />
+          <Footer />
+        </Box>
       </ThemeProvider>
     </React.Fragment>
   );

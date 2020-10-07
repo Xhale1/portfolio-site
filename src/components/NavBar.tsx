@@ -50,8 +50,8 @@ export default function NavBar() {
             </Typography>
           </Grid>
           <Grid item xs className={classes.thing}>
-            <NavLink href="/">Home</NavLink>
-            <NavLink href="/about">About</NavLink>
+            <NavLink href="/">Projects</NavLink>
+            <NavLink href="/contact">Contact</NavLink>
           </Grid>
         </Grid>
       </Box>
