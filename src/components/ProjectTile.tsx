@@ -14,13 +14,13 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     textStyle: {
       color: (props: Props) => props.project.titleColor,
-      marginBottom: 8,
+      marginBottom: theme.spacing(1),
       //   marginTop: 32,
       //   marginBottom: 16,
       //   marginLeft: 32,
     },
     subtitle: {
-      marginTop: 8,
+      marginTop: theme.spacing(1),
     },
     image: {
       objectFit: "cover",

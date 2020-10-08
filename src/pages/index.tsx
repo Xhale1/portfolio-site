@@ -5,14 +5,13 @@ import Grid from "@material-ui/core/Grid";
 import ProjectTile from "../components/ProjectTile";
 import Box from "@material-ui/core/Box";
 import { projectData } from "../data/Projects";
-import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     linkLeft: {
-      paddingRight: 16,
+      paddingRight: theme.spacing(2),
     },
   })
 );
