@@ -1,23 +1,18 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
-// import Box from '@material-ui/core/Box';
-// import ProTip from '../src/ProTip';
-// import Link from '../src/Link';
-// import Copyright from '../src/Copyright';
-import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-// import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import ProjectTile from "../components/ProjectTile";
 import Box from "@material-ui/core/Box";
 import { projectData } from "../data/Projects";
+import Button from "@material-ui/core/Button";
+import Link from "@material-ui/core/Link";
+import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    paper: {
-      padding: theme.spacing(2),
-      textAlign: "center",
-      color: theme.palette.text.secondary,
+    linkLeft: {
+      paddingRight: 16,
     },
   })
 );
@@ -30,14 +25,22 @@ export default function Index() {
 
   return (
     <Container maxWidth="md">
-      <Box my={6}>
-        <Typography variant="h1">Reece Carolan</Typography>
-        <Grid container spacing={3} alignItems="stretch">
+      <Box py={6}>
+        <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
+            <Typography variant="h1">Reece Carolan</Typography>
+            {/* <Typography variant="h4">Open to work</Typography> */}
             <Typography variant="body1">
-              I've spent thousands of hours since turning ten learning to code,
-              design, and communicate.
+              Looking to develop modern, user-friendly experiences for iOS.
             </Typography>
+            <Box my={3}>
+              <Link href="tel:6034224533" className={classes.linkLeft}>
+                (603) 422-4533
+              </Link>
+              <Link href="mailto:reececarolan@gmail.com">
+                reececarolan@gmail.com
+              </Link>
+            </Box>
           </Grid>
         </Grid>
       </Box>

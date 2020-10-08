@@ -3,6 +3,7 @@ import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import Card from "@material-ui/core/Card";
 import Project from "../models/Project";
 
 type Props = {
@@ -35,7 +36,8 @@ export default function ProjectTile(props: Props) {
 
   return (
     <Grid item xs={12} md={props.project.isWide ? 12 : 6}>
-      <Box borderRadius={32} bgcolor="#ffffff" overflow="hidden" height="100%">
+      <Card variant="outlined">
+        {/* <Box borderRadius={32} bgcolor="#ffffff" overflow="hidden" height="100%"> */}
         <Box m={4}>
           <Grid container>
             <Grid item xs={12} sm={props.project.isWide ? 6 : 12}>
@@ -59,7 +61,8 @@ export default function ProjectTile(props: Props) {
           alt="Project Image"
           className={classes.image}
         />
-      </Box>
+        {/* </Box> */}
+      </Card>
     </Grid>
   );
 }
