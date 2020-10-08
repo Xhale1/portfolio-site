@@ -42,4 +42,23 @@ export const projectData: Project[] = [
     isWide: true,
     titleColor: "#8e44ad",
   },
+  {
+    title: "Portfolio Site",
+    image: "/assets/HelloStudios.png",
+    description:
+      "This portfolio site was designed to communicate my past work as clearly as possible, and the design language is meant to reflect that.",
+    subtitle: "Technology Used",
+    subtitleDescription: "React.js, Next.js, TypeScript, Cloudflare",
+    isWide: false,
+    titleColor: "#0064E9",
+  },
+  {
+    title: "Yeats",
+    image: "/assets/HelloStudios.png",
+    description: "Yeats",
+    subtitle: "Technology Used",
+    subtitleDescription: "Swift 5, AWS (Lambda, Aurora), Public Speaking",
+    isWide: false,
+    titleColor: "#0064E9",
+  },
 ];

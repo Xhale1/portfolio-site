@@ -35,7 +35,7 @@ export default function ProjectTile(props: Props) {
   const classes = useStyles(props);
 
   return (
-    <Grid item xs={12} md={props.project.isWide ? 12 : 6}>
+    <Grid item xs={12} sm={props.project.isWide ? 12 : 6}>
       <Card variant="outlined">
         {/* <Box borderRadius={32} bgcolor="#ffffff" overflow="hidden" height="100%"> */}
         <Box m={4}>

@@ -36,10 +36,13 @@ export default function Index() {
               <Link href="tel:6034224533" className={classes.linkLeft}>
                 (603) 422-4533
               </Link>
-              <Link href="mailto:reececarolan@gmail.com">
+              <Link href="mailto:reececarolan@gmail.com" className={classes.linkLeft}>
                 reececarolan@gmail.com
               </Link>
             </Box>
+            <Link href="https://github.com/Xhale1" target="_blank" className={classes.linkLeft}>
+                GitHub
+              </Link>
           </Grid>
         </Grid>
       </Box>
