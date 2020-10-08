@@ -10,6 +10,7 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import ProjectTile from "../components/ProjectTile";
 import Box from "@material-ui/core/Box";
+import { projectData } from "../data/Projects";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -23,53 +24,28 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function Index() {
   const classes = useStyles();
+  const projects = projectData.map((project) => (
+    <ProjectTile project={project} key={project.title} />
+  ));
 
   return (
     <Container maxWidth="md">
-      <Typography variant="h1">Hello.</Typography>
-      <Box mt={6}>
-        <Grid container spacing={3}>
-          <Grid item xs={12}>
-            <ProjectTile
-              title="01. HelloCampus"
-              titleColor="#0064E9"
-              image="/assets/HelloCampusHero.png"
-              description="HelloCampus helps students share and discover events across their college campus. One of its core features is a beautiful native iOS app written in Swift."
-              descriptionWidth={6}
-            />
-          </Grid>
+      <Box my={6}>
+        <Typography variant="h1">Reece Carolan</Typography>
+        <Grid container spacing={3} alignItems="stretch">
           <Grid item xs={12} md={6}>
-            <ProjectTile
-              title="02. Turtle Fly"
-              titleColor="#27ae60"
-              image="/assets/ImageRectangle.jpg"
-              description="Turtle Fly was #1 in the App Store in 2011. I aquired it in 2016 and grew the downloads by 500% and the revenue by 700%."
-              descriptionWidth={12}
-            />
+            <Typography variant="body1">
+              I've spent thousands of hours since turning ten learning to code,
+              design, and communicate.
+            </Typography>
           </Grid>
-          {/* <Grid item xs>
-            <ProjectTile image="/assets/ImageSquare.jpg" />
-          </Grid>
-          <Grid item xs>
-            <ProjectTile image="/assets/ImageSquare.jpg" />
-          </Grid>
-          <Grid item xs>
-            <ProjectTile image="/assets/ImageSquare.jpg" />
-          </Grid> */}
+        </Grid>
+      </Box>
+      <Box mt={0}>
+        <Grid container spacing={3}>
+          {projects}
         </Grid>
       </Box>
     </Container>
-    // <Container maxWidth="sm">
-    //   <Box my={4}>
-    //     <Typography variant="h4" component="h1" gutterBottom>
-    //       Next.js with TypeScript example
-    //     </Typography>
-    //     <Link href="/about" color="secondary">
-    //       Go to the about page
-    //     </Link>
-    //     <ProTip />
-    //     <Copyright />
-    //   </Box>
-    // </Container>
   );
 }

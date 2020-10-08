@@ -41,6 +41,21 @@ const theme = createMuiTheme({
       fontWeight: 600,
       color: "#333333",
     },
+    h4: {
+      fontSize: "1.0rem",
+      // fontWeight: 600,
+      color: "#666666",
+    },
+    body1: {
+      fontSize: "1.2rem",
+      fontWeight: 400,
+      color: "#111111",
+    },
+    body2: {
+      fontSize: "1.0rem",
+      // fontWeight: 600,
+      color: "#666666",
+    },
   },
 });
 
