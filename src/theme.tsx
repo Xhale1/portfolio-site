@@ -16,10 +16,10 @@ const theme = createMuiTheme({
     background: {
       default: "#fff",
     },
-    // text: {
-    //   primary: "#f7f7f7",
-    //   secondary: colors.red[600],
-    // },
+    text: {
+      primary: "#111111",
+      secondary: "#666666",
+    },
   },
   typography: {
     fontWeightMedium: 600,

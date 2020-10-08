@@ -21,10 +21,14 @@ export default function MyApp(props: AppProps) {
   return (
     <React.Fragment>
       <Head>
-        <title>Reece Carolan</title>
+        <title>Reece Carolan - Developer</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
+        />
+        <meta
+          name="description"
+          content="Hello! I'm an iOS developer with a passion for user experience and communication."
         />
       </Head>
       <ThemeProvider theme={themeThing}>
