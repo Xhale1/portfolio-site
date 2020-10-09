@@ -6,7 +6,6 @@ export const projectData: Project[] = [
     image: "/assets/HelloCampusHero.png",
     description:
       "This is my biggest project to date. HelloCampus helps students share and discover events across their college campus. One of its core features is a beautiful native iOS app written in Swift.",
-    subtitle: "Technology Used",
     subtitleDescription:
       "Swift 5, Google Cloud Platform (Firestore, Cloud Functions, Auth), Node.js, TypeScript, Cocoapods",
     isWide: true,
@@ -17,7 +16,6 @@ export const projectData: Project[] = [
     image: "/assets/TurtleFlyOld.png",
     description:
       "Turtle Fly was #1 in the App Store in 2011. I aquired it in 2016 and grew the downloads by 500% and the revenue by 700% organically.",
-    subtitle: "Technology Used",
     subtitleDescription: "Objective-C, Cocos2D, MRC",
     isWide: false,
     titleColor: "#27ae60",
@@ -27,7 +25,6 @@ export const projectData: Project[] = [
     image: "/assets/TurtleFly.png",
     description:
       "Turtle Fly 2 is a ground-up rewrite of the original. It features an overhauled physics engine, high-res graphics, and improved modularity and code reusability.",
-    subtitle: "Technology Used",
     subtitleDescription: "Objective-C, SpriteKit, ARC",
     isWide: false,
     titleColor: "#27ae60",
@@ -37,26 +34,24 @@ export const projectData: Project[] = [
     image: "/assets/HelloStudios.png",
     description:
       "I co-founded HelloStudios to create and maintain eco-friendly websites. We developed and hosted 18 websites, reaching over two million people.",
-    subtitle: "Technology Used",
     subtitleDescription: "Wordpress, Cloudflare, Graphic Design",
     isWide: true,
     titleColor: "#8e44ad",
   },
   {
     title: "Portfolio Site",
-    image: "/assets/HelloStudios.png",
+    image: "/assets/nextjsLogo.png",
     description:
       "This portfolio site was designed to communicate my past work as clearly as possible.",
-    subtitle: "Technology Used",
     subtitleDescription: "React.js, Next.js, TypeScript, Cloudflare",
     isWide: false,
     titleColor: "#0064E9",
   },
   {
     title: "Yeats",
-    image: "/assets/HelloStudios.png",
-    description: "Yeats",
-    subtitle: "Technology Used",
+    image: "/assets/yeats.png",
+    description:
+      "I developed a native iOS app which communicated with AWS to generate low-cost meal plans over any given week. Ingredient prices and availability was collected by web scraping.",
     subtitleDescription: "Swift 5, AWS (Lambda, Aurora), Public Speaking",
     isWide: false,
     titleColor: "#0064E9",

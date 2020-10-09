@@ -56,9 +56,6 @@ export default function ProjectTile(props: Props) {
               <Typography variant="body1" className={classes.textBlock}>
                 {props.project.description}
               </Typography>
-              {/* <Typography variant="h4" className={classes.subtitle}>
-                {props.project.subtitle}
-              </Typography> */}
               <Typography variant="body2" className={classes.subtitle}>
                 {props.project.subtitleDescription}
               </Typography>
