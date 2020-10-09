@@ -8,11 +8,21 @@ export default function Footer() {
     <Box py={3}>
       <Typography variant="body2" color="textSecondary" align="center">
         {"Built with "}
-        <MuiLink color="inherit" target="_blank" href="https://reactjs.org/">
+        <MuiLink
+          color="inherit"
+          target="_blank"
+          rel="noopener"
+          href="https://reactjs.org/"
+        >
           React.js
         </MuiLink>
         {" and "}
-        <MuiLink color="inherit" target="_blank" href="https://nextjs.org/">
+        <MuiLink
+          color="inherit"
+          target="_blank"
+          rel="noopener"
+          href="https://nextjs.org/"
+        >
           Next.js
         </MuiLink>
       </Typography>
@@ -20,6 +30,7 @@ export default function Footer() {
         <MuiLink
           color="inherit"
           target="_blank"
+          rel="noopener"
           href="https://github.com/Xhale1/portfolio-site/"
         >
           ❤️ Open Source

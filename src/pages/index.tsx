@@ -45,6 +45,7 @@ export default function Index() {
             </Box>
             <Link
               href="https://github.com/Xhale1"
+              rel="noopener"
               target="_blank"
               className={classes.linkLeft}
             >

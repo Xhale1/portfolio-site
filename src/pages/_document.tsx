@@ -11,9 +11,9 @@ export default class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
           <link
-            href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
             rel="stylesheet"
-          ></link>
+          />
           {/* <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
