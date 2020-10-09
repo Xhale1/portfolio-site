@@ -30,19 +30,26 @@ export default function Index() {
             <Typography variant="h1">Reece Carolan</Typography>
             {/* <Typography variant="h4">Open to work</Typography> */}
             <Typography variant="body1">
-              Looking to develop modern, user-friendly experiences for iOS.
+              San Francisco Bay Area developer and designer. Open to offers :)
             </Typography>
             <Box my={3}>
               <Link href="tel:6034224533" className={classes.linkLeft}>
                 (603) 422-4533
               </Link>
-              <Link href="mailto:reececarolan@gmail.com" className={classes.linkLeft}>
+              <Link
+                href="mailto:reececarolan@gmail.com"
+                className={classes.linkLeft}
+              >
                 reececarolan@gmail.com
               </Link>
             </Box>
-            <Link href="https://github.com/Xhale1" target="_blank" className={classes.linkLeft}>
-                GitHub
-              </Link>
+            <Link
+              href="https://github.com/Xhale1"
+              target="_blank"
+              className={classes.linkLeft}
+            >
+              GitHub
+            </Link>
           </Grid>
         </Grid>
       </Box>

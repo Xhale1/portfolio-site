@@ -27,12 +27,15 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     subtitle: {
       marginTop: theme.spacing(1),
+      maxWidth: 600,
     },
     image: {
       objectFit: "cover",
       // alignContent: "center",
-      width: "100%",
-      maxWidth: 600,
+      // width: "100%",
+      // height: "100%",
+      maxWidth: "100%",
+      maxHeight: 350,
       display: "flex",
       // alignSelf: "flex-end",
     },
