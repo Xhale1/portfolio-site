@@ -46,7 +46,7 @@ export const projectData: Project[] = [
     title: "Portfolio Site",
     image: "/assets/HelloStudios.png",
     description:
-      "This portfolio site was designed to communicate my past work as clearly as possible, and the design language is meant to reflect that.",
+      "This portfolio site was designed to communicate my past work as clearly as possible.",
     subtitle: "Technology Used",
     subtitleDescription: "React.js, Next.js, TypeScript, Cloudflare",
     isWide: false,

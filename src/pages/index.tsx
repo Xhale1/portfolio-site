@@ -47,7 +47,7 @@ export default function Index() {
         </Grid>
       </Box>
       <Box mt={0}>
-        <Grid container spacing={3}>
+        <Grid container spacing={3} alignItems="stretch">
           {projects}
         </Grid>
       </Box>

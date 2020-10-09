@@ -12,12 +12,16 @@ type Props = {
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    outer: {
+      height: "100%",
+      // display: "flex"
+    },
+    textBlock: {
+      maxWidth: 655,
+    },
     textStyle: {
       color: (props: Props) => props.project.titleColor,
       marginBottom: theme.spacing(1),
-      //   marginTop: 32,
-      //   marginBottom: 16,
-      //   marginLeft: 32,
     },
     subtitle: {
       marginTop: theme.spacing(1),
@@ -25,8 +29,12 @@ const useStyles = makeStyles((theme: Theme) =>
     image: {
       objectFit: "cover",
       width: "100%",
-      maxHeight: "100%",
-      display: "block",
+      alignSelf: "flex-end",
+    },
+    gridContent: {
+      display: "flex",
+      flexGrow: 1,
+      flexShrink: 1,
     },
   })
 );
@@ -35,33 +43,35 @@ export default function ProjectTile(props: Props) {
   const classes = useStyles(props);
 
   return (
+    //Horizantal container grid for card
     <Grid item xs={12} sm={props.project.isWide ? 12 : 6}>
-      <Card variant="outlined">
-        {/* <Box borderRadius={32} bgcolor="#ffffff" overflow="hidden" height="100%"> */}
-        <Box m={4}>
-          <Grid container>
-            <Grid item xs={12} sm={props.project.isWide ? 6 : 12}>
+      <Card variant="outlined" className={classes.outer}>
+        {/* Vertical grid for card contents */}
+        <Grid container direction="column" className={classes.outer}>
+          <Grid item>
+            <Box m={4}>
               <Typography variant="h3" className={classes.textStyle}>
                 {props.project.title}
               </Typography>
-              <Typography variant="body1">
+              <Typography variant="body1" className={classes.textBlock}>
                 {props.project.description}
               </Typography>
               {/* <Typography variant="h4" className={classes.subtitle}>
-                {props.subtitle}
+                {props.project.subtitle}
               </Typography> */}
               <Typography variant="body2" className={classes.subtitle}>
                 {props.project.subtitleDescription}
               </Typography>
-            </Grid>
+            </Box>
           </Grid>
-        </Box>
-        <img
-          src={props.project.image}
-          alt="Project Image"
-          className={classes.image}
-        />
-        {/* </Box> */}
+          <Grid item className={classes.gridContent}>
+            <img
+              src={props.project.image}
+              alt="Project Image"
+              className={classes.image}
+            />
+          </Grid>
+        </Grid>
       </Card>
     </Grid>
   );
