@@ -5,7 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import Project from "../models/Project";
-import Container from "@material-ui/core/Container";
 
 type Props = {
   project: Project;
