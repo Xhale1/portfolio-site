@@ -3,7 +3,7 @@ import Project from "../models/Project";
 export const projectData: Project[] = [
   {
     title: "HelloCampus",
-    image: "/assets/HelloCampus.png",
+    image: "/assets/HelloCampus.jpg",
     description:
       "This is my biggest project to date. HelloCampus helps students share and discover events across their college campus. One of its core features is a beautiful native iOS app written in Swift.",
     subtitleDescription:
@@ -31,7 +31,7 @@ export const projectData: Project[] = [
   },
   {
     title: "HelloCRM",
-    image: "/assets/HelloCRM.png",
+    image: "/assets/HelloCRM.jpg",
     description:
       "A modern CRM that runs right on your phone. It takes full advantage of the Apple ecosystem to make managing your network a breeze.",
     subtitleDescription: "Swift 5, Google Cloud Platform, Stripe",
