@@ -60,11 +60,9 @@ export default function ProjectTile(props: Props) {
     //Horizantal container grid for card
     <Grid item xs={12} sm={props.project.isWide ? 12 : 6}>
       <Card variant="outlined" className={classes.outer}>
-        {/* <Box m={4}> */}
         {/* Vertical grid for card contents */}
         <Grid container direction="column" className={classes.outer}>
           <Grid item>
-            {/* <Box m={4}> */}
             <Typography variant="h3" className={classes.textStyle}>
               {props.project.title}
             </Typography>
@@ -74,24 +72,24 @@ export default function ProjectTile(props: Props) {
             <Typography variant="body2" className={classes.subtitle}>
               {props.project.subtitleDescription}
             </Typography>
-            {/* </Box> */}
           </Grid>
           <Grid item className={classes.gridContent}>
             <Box
               justifyContent="center"
+              alignItems="center"
               display="flex"
               width="100%"
               className={classes.imageBox}
             >
               <img
                 src={props.project.image}
-                alt="Project Image"
+                srcSet={props.project.image2x}
+                alt={props.project.title}
                 className={classes.image}
               />
             </Box>
           </Grid>
         </Grid>
-        {/* </Box> */}
       </Card>
     </Grid>
   );

@@ -4,6 +4,7 @@ export const projectData: Project[] = [
   {
     title: "HelloCampus",
     image: "/assets/HelloCampus.jpg",
+    image2x: "/assets/HelloCampus@2x.jpg",
     description:
       "This is my biggest project to date. HelloCampus helps students share and discover events across their college campus. One of its core features is a beautiful native iOS app written in Swift.",
     subtitleDescription:
@@ -32,6 +33,7 @@ export const projectData: Project[] = [
   {
     title: "HelloCRM",
     image: "/assets/HelloCRM.jpg",
+    image2x: "/assets/HelloCRM@2x.jpg",
     description:
       "A modern CRM that runs right on your phone. It takes full advantage of the Apple ecosystem to make managing your network a breeze.",
     subtitleDescription: "Swift 5, Google Cloud Platform, Stripe",
@@ -49,7 +51,8 @@ export const projectData: Project[] = [
   },
   {
     title: "Portfolio Site",
-    image: "/assets/Reece.png",
+    image: "/assets/reeceApp.png",
+    image2x: "/assets/reeceApp@2x.png",
     description:
       "This website was designed to communicate my past work as clearly as possible.",
     subtitleDescription: "React.js, Next.js, TypeScript, Cloudflare",
@@ -58,7 +61,8 @@ export const projectData: Project[] = [
   },
   {
     title: "Yeats",
-    image: "/assets/Yeats.jpg",
+    image: "/assets/yeats.png",
+    image2x: "/assets/yeats@2x.png",
     description:
       "I developed a native iOS app which communicated with AWS to generate low-cost meal plans over any given week. Ingredient prices and availability was collected by web scraping.",
     subtitleDescription: "Swift 5, AWS (Lambda, Aurora), Public Speaking",
@@ -68,6 +72,7 @@ export const projectData: Project[] = [
   {
     title: "The Guinea Pig",
     image: "/assets/guineaPig.jpg",
+    image2x: "/assets/guineaPig@2x.jpg",
     description:
       "This is the worst code I have ever written. It's also the first code I ever wrote. When I was ten I wanted to create a guinea pig in Minecraft, so I taught myself Java. This was when I fell in love with software.",
     subtitleDescription: "Java, Blender, Minecraft",
