@@ -32,11 +32,8 @@ export default function MyApp(props: AppProps) {
         />
       </Head>
       <ThemeProvider theme={themeThing}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <Box bgcolor="#f7f7f7">
-          {/* <NavBar /> */}
-
+        <Box sx={{ bgcolor: "#f7f7f7" }}>
           <Component {...pageProps} />
 
           <Footer />

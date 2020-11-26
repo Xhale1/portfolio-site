@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 
 export default function Footer() {
   return (
-    <Box py={3}>
+    <Box sx={{ py: 3 }}>
       <Typography variant="body2" color="textSecondary" align="center">
         {"Built with "}
         <MuiLink

@@ -24,7 +24,7 @@ export default function Index() {
 
   return (
     <Container maxWidth="md">
-      <Box py={6}>
+      <Box sx={{ py: 6 }}>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
             <Typography variant="h1">Reece Carolan</Typography>
@@ -32,7 +32,7 @@ export default function Index() {
             <Typography variant="body1">
               San Francisco Bay Area developer and designer. Open to offers :)
             </Typography>
-            <Box my={3}>
+            <Box sx={{ my: 3 }}>
               <Link href="tel:6034224533" className={classes.linkLeft}>
                 (603) 422-4533
               </Link>
@@ -54,7 +54,7 @@ export default function Index() {
           </Grid>
         </Grid>
       </Box>
-      <Box mt={0}>
+      <Box sx={{ mt: 0 }}>
         <Grid container spacing={3} alignItems="stretch">
           {projects}
         </Grid>

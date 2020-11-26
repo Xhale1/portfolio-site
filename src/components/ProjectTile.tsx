@@ -75,10 +75,12 @@ export default function ProjectTile(props: Props) {
           </Grid>
           <Grid item className={classes.gridContent}>
             <Box
-              justifyContent="center"
-              alignItems="center"
-              display="flex"
-              width="100%"
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+                display: "flex",
+                width: "100%",
+              }}
               className={classes.imageBox}
             >
               <img
