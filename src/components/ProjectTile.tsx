@@ -63,7 +63,7 @@ export default function ProjectTile(props: Props) {
         {/* Vertical grid for card contents */}
         <Grid container direction="column" className={classes.outer}>
           <Grid item>
-            <Typography variant="h3" className={classes.textStyle}>
+            <Typography variant="h2" className={classes.textStyle}>
               {props.project.title}
             </Typography>
             <Typography variant="body1" className={classes.textBlock}>

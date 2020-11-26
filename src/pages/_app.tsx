@@ -3,7 +3,7 @@ import Head from "next/head";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import themeThing from "../theme";
+import theme from "../theme";
 import Footer from "../components/Footer";
 import Box from "@material-ui/core/Box";
 
@@ -22,16 +22,13 @@ export default function MyApp(props: AppProps) {
     <React.Fragment>
       <Head>
         <title>Reece Carolan - Developer</title>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
-        />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
         <meta
           name="description"
           content="Hello! I'm an iOS developer with a passion for user experience and communication."
         />
       </Head>
-      <ThemeProvider theme={themeThing}>
+      <ThemeProvider theme={theme}>
         <CssBaseline />
         <Box sx={{ bgcolor: "#f7f7f7" }}>
           <Component {...pageProps} />

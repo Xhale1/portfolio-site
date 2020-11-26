@@ -28,7 +28,6 @@ export default function Index() {
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
             <Typography variant="h1">Reece Carolan</Typography>
-            {/* <Typography variant="h4">Open to work</Typography> */}
             <Typography variant="body1">
               San Francisco Bay Area developer and designer. Open to offers :)
             </Typography>
