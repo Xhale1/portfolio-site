@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme: Theme) =>
     outer: {
       height: "100%",
       padding: theme.spacing(2),
-      // display: "flex"
     },
     textBlock: {
       maxWidth: 600,
@@ -30,21 +29,15 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     image: {
       objectFit: "cover",
-      // alignContent: "center",
-      // width: "100%",
-      // height: "100%",
       maxWidth: "100%",
       maxHeight: 350,
       display: "flex",
-      // alignSelf: "flex-end",
     },
 
     imageBox: {
       alignSelf: "flex-end",
-      // textAlign: "center",
     },
     gridContent: {
-      // minHeight: 400,
       display: "flex",
       flexGrow: 1,
       flexShrink: 1,
@@ -70,7 +63,7 @@ export default function ProjectTile(props: Props) {
               {props.project.description}
             </Typography>
             <Typography variant="body2" className={classes.subtitle}>
-              {props.project.subtitleDescription}
+              {props.project.date}. {props.project.subtitleDescription}
             </Typography>
           </Grid>
           <Grid item className={classes.gridContent}>

@@ -3,17 +3,19 @@ import Project from "../models/Project";
 export const projectData: Project[] = [
   {
     title: "HelloCampus",
+    date: "2020",
     image: "/assets/HelloCampus.jpg",
     image2x: "/assets/HelloCampus@2x.jpg",
     description:
-      "This is my biggest project to date. HelloCampus helps students share and discover events across their college campus. One of its core features is a beautiful native iOS app written in Swift.",
+      "HelloCampus is a platform which allows students to share and discover events across their college campus. I developed the native iOS app, web client, and backend.",
     subtitleDescription:
-      "Swift 5, Google Cloud Platform (Firestore, Cloud Functions, Auth), Node.js, TypeScript, Cocoapods",
+      "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), Node.js, TypeScript, React JS, Kotlin, Jetpack",
     isWide: true,
     titleColor: "#2e7df6",
   },
   {
     title: "Turtle Fly",
+    date: "2016",
     image: "/assets/TurtleFlyOld.png",
     description:
       "Turtle Fly was #1 in the App Store in 2011. I aquired it in 2016 and grew the downloads by 500% and the revenue by 700% over the previous year.",
@@ -23,6 +25,7 @@ export const projectData: Project[] = [
   },
   {
     title: "Turtle Fly 2",
+    date: "2017",
     image: "/assets/TurtleFly.png",
     description:
       "Turtle Fly 2 is a ground-up rewrite of the original. It features an overhauled physics engine, high-res graphics, and improved modularity and code reusability.",
@@ -32,6 +35,7 @@ export const projectData: Project[] = [
   },
   {
     title: "HelloCRM",
+    date: "2019",
     image: "/assets/HelloCRM.jpg",
     image2x: "/assets/HelloCRM@2x.jpg",
     description:
@@ -42,6 +46,7 @@ export const projectData: Project[] = [
   },
   {
     title: "HelloStudios LLC",
+    date: "2018-2020",
     image: "/assets/HelloStudios.png",
     description:
       "I co-founded HelloStudios to create and maintain eco-friendly websites. We developed and hosted 18 websites, reaching over two million people.",
@@ -51,6 +56,7 @@ export const projectData: Project[] = [
   },
   {
     title: "Portfolio Site",
+    date: "2020",
     image: "/assets/reeceApp.png",
     image2x: "/assets/reeceApp@2x.png",
     description:
@@ -61,6 +67,7 @@ export const projectData: Project[] = [
   },
   {
     title: "Yeats",
+    date: "2020",
     image: "/assets/yeats.png",
     image2x: "/assets/yeats@2x.png",
     description:
@@ -71,6 +78,7 @@ export const projectData: Project[] = [
   },
   {
     title: "The Guinea Pig",
+    date: "2010",
     image: "/assets/guineaPig.jpg",
     image2x: "/assets/guineaPig@2x.jpg",
     description:
