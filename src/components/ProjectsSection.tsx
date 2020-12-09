@@ -8,7 +8,7 @@ type Props = {
   projects: Project[];
 };
 
-export default function ProjectsSection(props: Props) {
+export default function ProjectsSection(props: Props): JSX.Element {
   const projects = props.projects.map((project) => (
     <ProjectTile project={project} key={project.title} />
   ));

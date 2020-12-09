@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function ProjectTile(props: Props) {
+export default function ProjectTile(props: Props): JSX.Element {
   const classes = useStyles(props);
 
   return (

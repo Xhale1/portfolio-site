@@ -7,14 +7,14 @@ import theme from "../theme";
 import Footer from "../components/Footer";
 import Box from "@material-ui/core/Box";
 
-export default function MyApp(props: AppProps) {
+export default function MyApp(props: AppProps): JSX.Element {
   const { Component, pageProps } = props;
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector("#jss-server-side");
     if (jssStyles) {
-      jssStyles.parentElement!.removeChild(jssStyles);
+      jssStyles.parentElement?.removeChild(jssStyles);
     }
   }, []);
 

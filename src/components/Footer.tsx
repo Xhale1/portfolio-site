@@ -3,7 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import MuiLink from "@material-ui/core/Link";
 import Box from "@material-ui/core/Box";
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
   return (
     <Box sx={{ py: 3 }}>
       <Typography variant="body2" color="textSecondary" align="center">

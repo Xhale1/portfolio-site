@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function HeroSection() {
+export default function HeroSection(): JSX.Element {
   const classes = useStyles();
 
   return (
@@ -22,7 +22,7 @@ export default function HeroSection() {
         <Grid item xs={12} md={6}>
           <Typography variant="h1">Reece Carolan</Typography>
           <Typography variant="body1">
-            San Francisco Bay Area developer and designer. Open to offers :)
+            San Francisco Bay Area developer and designer.
           </Typography>
           <Box sx={{ my: 3 }}>
             <Link href="tel:6034224533" className={classes.linkLeft}>
