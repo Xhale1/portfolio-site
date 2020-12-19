@@ -1,19 +1,15 @@
 # Reece's Portfolio Website
 
-This website is meant to showcase some of Reece Carolan's projects.
+This website is meant to showcase several projects made by myself, Reece Carolan.
 
 ## Core Technologies
 
-1. TypeScript 4.1
 1. React.js 17
 1. Next.js 10
 1. Material-UI 5
 
-## Developer Technologies
+## Developer Experience
 
-1. ESLint
-1. Prettier
-
-## Project Overview
-
-Raw data used to populate the page is found in src/data/Projects.ts.
+1. TypeScript 4.1
+1. ESLint 7
+1. Prettier 2

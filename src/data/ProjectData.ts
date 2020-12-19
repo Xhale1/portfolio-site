@@ -7,9 +7,9 @@ export const projectData: Project[] = [
     image: "/assets/HelloCampus.jpg",
     image2x: "/assets/HelloCampus@2x.jpg",
     description:
-      "HelloCampus is a platform which allows students to share and discover events across their college campus. I developed the native iOS app, web client, and backend.",
+      "HelloCampus allows students to share and discover events across their college campus. I developed the backend and the native iOS, Android, and web apps.",
     subtitleDescription:
-      "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), Node.js, TypeScript, React JS, Kotlin, Jetpack",
+      "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React JS, Node.js, Kotlin, Android Jetpack",
     isWide: true,
     titleColor: "#2e7df6",
   },
@@ -28,7 +28,7 @@ export const projectData: Project[] = [
     date: "2017",
     image: "/assets/TurtleFly.png",
     description:
-      "Turtle Fly 2 is a ground-up rewrite of the original. It features an overhauled physics engine, high-res graphics, and improved modularity and code reusability.",
+      "Turtle Fly 2 is a ground-up rewrite of the original. It features a new physics and render engine, high-res graphics, and maintainable programming patterns.",
     subtitleDescription: "Objective-C, SpriteKit, ARC, MVC",
     isWide: false,
     titleColor: "#43A047",
@@ -39,8 +39,9 @@ export const projectData: Project[] = [
     image: "/assets/HelloCRM.jpg",
     image2x: "/assets/HelloCRM@2x.jpg",
     description:
-      "A modern CRM that runs right on your phone. It takes full advantage of the Apple ecosystem to make managing your network a breeze.",
-    subtitleDescription: "Swift 5, Google Cloud Platform, Stripe",
+      "A modern CRM that takes full advantage of the Apple ecosystem to make managing your network a breeze.",
+    subtitleDescription:
+      "Swift 5, Google Cloud Platform (Firestore, Cloud Functions, Auth), Stripe",
     isWide: true,
     titleColor: "#2e7df6",
   },
@@ -49,8 +50,9 @@ export const projectData: Project[] = [
     date: "2018-2020",
     image: "/assets/HelloStudios.png",
     description:
-      "I co-founded HelloStudios to create and maintain eco-friendly websites. We developed and hosted 18 websites, reaching over two million people.",
-    subtitleDescription: "Wordpress, Cloudflare, Graphic Design",
+      "I co-founded HelloStudios to create and maintain eco-friendly websites. We developed and hosted 18 websites serving over two million people.",
+    subtitleDescription:
+      "Wordpress, Cloudflare, Graphic Design (Adobe Photoshop, Illustrator, and InDesign)",
     isWide: true,
     titleColor: "#2e7df6",
   },
@@ -82,7 +84,7 @@ export const projectData: Project[] = [
     image: "/assets/guineaPig.jpg",
     image2x: "/assets/guineaPig@2x.jpg",
     description:
-      "This is the worst code I have ever written. It's also the first code I ever wrote. When I was ten I wanted to create a guinea pig in Minecraft, so I taught myself Java. This was when I fell in love with software.",
+      "This is without a doubt the worst code I have ever written. When I was 10 I wanted to add a guinea pig to my favorite video game Minecraft, so I taught myself Java. One long summer later I finished my first software project, and I had my guinea pig.",
     subtitleDescription: "Java, Blender, Minecraft",
     isWide: false,
     titleColor: "#2e7df6",
