@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import Project from "../models/Project";
+import Image from "next/image";
 
 type Props = {
   project: Project;
@@ -76,11 +77,15 @@ export default function ProjectTile(props: Props): JSX.Element {
               }}
               className={classes.imageBox}
             >
-              <img
+              <Image
                 src={props.project.image}
-                srcSet={props.project.image2x}
+                // srcSet={props.project.image2x}
                 alt={props.project.title}
                 className={classes.image}
+                width={props.project.width}
+                height={props.project.height}
+                // objectFit="contain"
+                // layout="fill"
               />
             </Box>
           </Grid>
