@@ -79,13 +79,10 @@ export default function ProjectTile(props: Props): JSX.Element {
             >
               <Image
                 src={props.project.image}
-                // srcSet={props.project.image2x}
                 alt={props.project.title}
                 className={classes.image}
                 width={props.project.width}
                 height={props.project.height}
-                // objectFit="contain"
-                // layout="fill"
               />
             </Box>
           </Grid>
