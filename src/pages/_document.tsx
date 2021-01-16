@@ -3,9 +3,9 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/core/styles";
 import createEmotionServer from "@emotion/server/create-instance";
 // import theme from "../theme";
-import { cache } from "./_app";
+// import { cache } from "./_app";
 
-const { extractCritical } = createEmotionServer(cache);
+// const { extractCritical } = createEmotionServer(cache);
 
 export default class MyDocument extends Document {
   render(): JSX.Element {
@@ -63,7 +63,7 @@ MyDocument.getInitialProps = async (ctx) => {
     });
 
   const initialProps = await Document.getInitialProps(ctx);
-  const styles = extractCritical(initialProps.html);
+  // const styles = extractCritical(initialProps.html);
 
   return {
     ...initialProps,
@@ -71,12 +71,6 @@ MyDocument.getInitialProps = async (ctx) => {
     styles: [
       ...React.Children.toArray(initialProps.styles),
       sheets.getStyleElement(),
-      <style
-        key="emotion-style-tag"
-        data-emotion={`css ${styles.ids.join(" ")}`}
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: styles.css }}
-      />,
     ],
   };
 };
