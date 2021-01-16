@@ -1,40 +1,38 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import MuiLink from "@material-ui/core/Link";
-import Box from "@material-ui/core/Box";
+import { Typography, Link, Box } from "@material-ui/core";
 
 export default function Footer(): JSX.Element {
   return (
     <Box sx={{ py: 3 }}>
-      <Typography variant="body2" color="textSecondary" align="center">
+      <Typography variant="body2" align="center">
         {"Built with "}
-        <MuiLink
+        <Link
           color="inherit"
           target="_blank"
           rel="noopener"
           href="https://reactjs.org/"
         >
           React.js
-        </MuiLink>
+        </Link>
         {" and "}
-        <MuiLink
+        <Link
           color="inherit"
           target="_blank"
           rel="noopener"
           href="https://nextjs.org/"
         >
           Next.js
-        </MuiLink>
+        </Link>
       </Typography>
-      <Typography variant="body2" color="textSecondary" align="center">
-        <MuiLink
+      <Typography variant="body2" align="center">
+        <Link
           color="inherit"
           target="_blank"
           rel="noopener"
           href="https://github.com/Xhale1/portfolio-site/"
         >
           ❤️ Open Source
-        </MuiLink>
+        </Link>
       </Typography>
     </Box>
   );

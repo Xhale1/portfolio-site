@@ -1,9 +1,6 @@
 import React from "react";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
-import Card from "@material-ui/core/Card";
+import { Box, Typography, Grid, Card } from "@material-ui/core";
 import Project from "../models/Project";
 import Image from "next/image";
 
@@ -17,24 +14,12 @@ const useStyles = makeStyles((theme: Theme) =>
       height: "100%",
       padding: theme.spacing(2),
     },
-    textBlock: {
-      maxWidth: 600,
-    },
-    textStyle: {
-      color: (props: Props) => props.project.titleColor,
-      marginBottom: theme.spacing(1),
-    },
-    subtitle: {
-      marginTop: theme.spacing(1),
-      maxWidth: 600,
-    },
     image: {
       objectFit: "cover",
       maxWidth: "100%",
       maxHeight: 350,
       display: "flex",
     },
-
     imageBox: {
       alignSelf: "flex-end",
     },
@@ -57,13 +42,16 @@ export default function ProjectTile(props: Props): JSX.Element {
         {/* Vertical grid for card contents */}
         <Grid container direction="column" className={classes.outer}>
           <Grid item>
-            <Typography variant="h2" className={classes.textStyle}>
+            <Typography
+              variant="h2"
+              sx={{ mb: 1, color: props.project.titleColor }}
+            >
               {props.project.title}
             </Typography>
-            <Typography variant="body1" className={classes.textBlock}>
+            <Typography variant="body1" sx={{ maxWidth: 600 }}>
               {props.project.description}
             </Typography>
-            <Typography variant="body2" className={classes.subtitle}>
+            <Typography variant="body2" sx={{ maxWidth: 600, mt: 1 }}>
               {props.project.date}. {props.project.subtitleDescription}
             </Typography>
           </Grid>

@@ -1,6 +1,5 @@
 import React from "react";
-import Box from "@material-ui/core/Box";
-import Grid from "@material-ui/core/Grid";
+import { Grid } from "@material-ui/core";
 import Project from "../models/Project";
 import ProjectTile from "./ProjectTile";
 
@@ -14,10 +13,8 @@ export default function ProjectsSection(props: Props): JSX.Element {
   ));
 
   return (
-    <Box sx={{ mt: 0 }}>
-      <Grid container spacing={3} alignItems="stretch">
-        {projects}
-      </Grid>
-    </Box>
+    <Grid container spacing={3} alignItems="stretch">
+      {projects}
+    </Grid>
   );
 }

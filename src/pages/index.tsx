@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "@material-ui/core/Container";
+import { Container } from "@material-ui/core";
 import { projectData } from "../data/ProjectData";
 import HeroSection from "../components/HeroSection";
 import ProjectsSection from "../components/ProjectsSection";

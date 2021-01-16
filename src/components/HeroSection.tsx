@@ -1,21 +1,7 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
-import Link from "@material-ui/core/Link";
-import Grid from "@material-ui/core/Grid";
-import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    linkLeft: {
-      paddingRight: theme.spacing(2),
-    },
-  })
-);
+import { Typography, Box, Link, Grid } from "@material-ui/core";
 
 export default function HeroSection(): JSX.Element {
-  const classes = useStyles();
-
   return (
     <Box sx={{ py: 6 }}>
       <Grid container spacing={3}>
@@ -25,22 +11,14 @@ export default function HeroSection(): JSX.Element {
             San Francisco Bay Area developer and designer.
           </Typography>
           <Box sx={{ my: 3 }}>
-            <Link href="tel:6034224533" className={classes.linkLeft}>
+            <Link href="tel:6034224533" sx={{ pr: 2 }}>
               (603) 422-4533
             </Link>
-            <Link
-              href="mailto:reececarolan@gmail.com"
-              className={classes.linkLeft}
-            >
+            <Link href="mailto:reececarolan@gmail.com">
               reececarolan@gmail.com
             </Link>
           </Box>
-          <Link
-            href="https://github.com/Xhale1"
-            rel="noopener"
-            target="_blank"
-            className={classes.linkLeft}
-          >
+          <Link href="https://github.com/Xhale1" rel="noopener" target="_blank">
             GitHub
           </Link>
         </Grid>
