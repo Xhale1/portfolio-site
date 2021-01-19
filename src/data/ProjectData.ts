@@ -41,7 +41,7 @@ export const projectData: Project[] = [
   {
     title: "HelloCRM",
     date: "2019",
-    image: "/assets/HelloCRM.jpg",
+    image: "/assets/HelloCRM.png",
     width: 622,
     height: 350,
     description:
