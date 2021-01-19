@@ -4,7 +4,7 @@ export const projectData: Project[] = [
   {
     title: "HelloCampus",
     date: "2020",
-    image: "/assets/HelloCampus.jpg",
+    image: "/assets/HelloCampus.png",
     width: 622,
     height: 350,
     description:
@@ -30,7 +30,7 @@ export const projectData: Project[] = [
     title: "Turtle Fly 2",
     date: "2017",
     image: "/assets/TurtleFly.png",
-    width: 350,
+    width: 173,
     height: 350,
     description:
       "Turtle Fly 2 is a ground-up rewrite of the original. It features a new physics and render engine, high-res graphics, and maintainable programming patterns.",

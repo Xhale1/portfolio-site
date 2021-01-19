@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import Project from "../models/Project";
-import ProjectTile from "./ProjectTile";
+import ProjectCard from "./ProjectCard";
 
 type Props = {
   projects: Project[];
@@ -9,7 +9,7 @@ type Props = {
 
 export default function ProjectsSection(props: Props): JSX.Element {
   const projects = props.projects.map((project) => (
-    <ProjectTile project={project} key={project.title} />
+    <ProjectCard project={project} key={project.title} />
   ));
 
   return (
