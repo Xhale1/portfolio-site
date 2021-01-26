@@ -1,14 +1,13 @@
 import React from "react";
-import { Container } from "@material-ui/core";
-import { projectData } from "../data/ProjectData";
-import HeroSection from "../components/HeroSection";
-import ProjectsSection from "../components/ProjectsSection";
+import { projectData } from "data/ProjectData";
+import HeroSection from "components/HeroSection";
+import ProjectsSection from "components/ProjectsSection";
 
 export default function Index(): JSX.Element {
   return (
-    <Container maxWidth="md">
+    <React.Fragment>
       <HeroSection />
       <ProjectsSection projects={projectData} />
-    </Container>
+    </React.Fragment>
   );
 }

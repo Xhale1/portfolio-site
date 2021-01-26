@@ -1,5 +1,5 @@
 import React from "react";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { Container, useMediaQuery } from "@material-ui/core";
 import Head from "next/head";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "@material-ui/core/styles";
@@ -38,7 +38,9 @@ export default function App(props: AppProps): JSX.Element {
       </Head>
       <ThemeProvider theme={dynamicTheme}>
         <CssBaseline />
-        <Component {...pageProps} />
+        <Container maxWidth="md">
+          <Component {...pageProps} />
+        </Container>
         <Footer />
       </ThemeProvider>
     </React.Fragment>

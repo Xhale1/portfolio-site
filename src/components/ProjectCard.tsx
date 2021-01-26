@@ -1,7 +1,7 @@
 import React from "react";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import { Box, Typography, Grid, Card } from "@material-ui/core";
-import Project from "../models/Project";
+import Project from "models/Project";
 import Image from "next/image";
 
 type Props = {
@@ -12,16 +12,10 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     outer: {
       height: "100%",
-      padding: theme.spacing(2),
     },
     image: {
-      objectFit: "cover",
       maxWidth: "100%",
       maxHeight: 350,
-      display: "flex",
-    },
-    imageBox: {
-      alignSelf: "flex-end",
     },
     gridContent: {
       display: "flex",
@@ -32,30 +26,25 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function ProjectCard(props: Props): JSX.Element {
-  const classes = useStyles(props);
+export default function ProjectCard({ project }: Props): JSX.Element {
+  const classes = useStyles();
 
   return (
-    //Horizantal container grid for card
-    <Grid item xs={12} sm={props.project.isWide ? 12 : 6}>
-      <Card variant="outlined" className={classes.outer}>
-        {/* Vertical grid for card contents */}
+    <Grid item xs={12} sm={project.isWide ? 12 : 6}>
+      <Card variant="outlined" sx={{ height: "100%", p: 4 }}>
         <Grid container direction="column" className={classes.outer}>
           <Grid item>
-            <Typography
-              variant="h2"
-              sx={{ mb: 1, color: props.project.titleColor }}
-            >
-              {props.project.title}
+            <Typography variant="h2" sx={{ mb: 1, color: project.titleColor }}>
+              {project.title}
             </Typography>
             <Typography variant="body1" sx={{ maxWidth: 600 }}>
-              {props.project.description}
+              {project.description}
             </Typography>
             <Typography variant="body2" sx={{ maxWidth: 600, mt: 1 }}>
-              {props.project.date}. {props.project.subtitleDescription}
+              {project.date}. {project.subtitleDescription}
             </Typography>
           </Grid>
-          <Grid item className={classes.gridContent}>
+          <Grid item className={classes.gridContent} alignItems="flex-end">
             <Box
               sx={{
                 justifyContent: "center",
@@ -63,14 +52,13 @@ export default function ProjectCard(props: Props): JSX.Element {
                 display: "flex",
                 width: "100%",
               }}
-              className={classes.imageBox}
             >
               <Image
-                src={props.project.image}
-                alt={props.project.title}
+                src={project.image}
+                alt={project.title}
                 className={classes.image}
-                width={props.project.width}
-                height={props.project.height}
+                width={project.width}
+                height={project.height}
               />
             </Box>
           </Grid>

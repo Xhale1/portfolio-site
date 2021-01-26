@@ -10,7 +10,7 @@ export const projectData: Project[] = [
     description:
       "HelloCampus allows students to share and discover events across their college campus. I developed the backend and the native iOS, Android, and web apps.",
     subtitleDescription:
-      "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React JS, Node.js, Kotlin, Android Jetpack",
+      "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React.js, Next.js, Node.js, Kotlin, Android Jetpack",
     isWide: true,
     titleColor: "#2e7df6",
   },
