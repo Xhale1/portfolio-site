@@ -25,6 +25,7 @@ export const NextLinkComposed = React.forwardRef<
     passHref,
     shallow,
     prefetch,
+    locale,
     ...other
   } = props;
 
@@ -37,6 +38,7 @@ export const NextLinkComposed = React.forwardRef<
       scroll={scroll}
       shallow={shallow}
       passHref={passHref}
+      locale={locale}
     >
       <a ref={ref} {...other} />
     </NextLink>
