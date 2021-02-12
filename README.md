@@ -23,5 +23,5 @@ This website is meant to showcase several projects made by myself, Reece Carolan
 
 ## Performance
 
-- Largest contentful paint takes 0.5 seconds over 10mb/s internet and transfers 236kb of data.
+- Largest contentful paint takes 0.4 seconds over 10mb/s internet and transfers ~236kb of data.
 - Project achieves a perfect score on a lighthouse audit.
