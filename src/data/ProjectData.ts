@@ -2,13 +2,13 @@ import Project from "../models/Project";
 
 export const projectData: Project[] = [
   {
-    title: "HelloCampus",
+    title: "HelloPeople",
     date: "2020",
-    image: "/assets/HelloCampus.png",
+    image: "/assets/HelloPeople.png",
     width: 622,
     height: 350,
     description:
-      "HelloCampus allows students to share and discover events across their college campus. I developed the backend and the native iOS, Android, and web apps.",
+      "HelloPeople allows students to share and discover events across their college campus. I developed the backend and the native iOS, Android, and web apps.",
     subtitleDescription:
       "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React.js, Next.js, Node.js, Kotlin, Android Jetpack",
     isWide: true,
