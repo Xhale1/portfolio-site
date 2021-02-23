@@ -41,6 +41,7 @@ export default function ProjectCard({ project }: Props): JSX.Element {
                 alt={project.title}
                 width={project.width}
                 height={project.height}
+                quality={100}
               />
             </Box>
           </Grid>
