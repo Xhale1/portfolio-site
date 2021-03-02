@@ -10,7 +10,7 @@ This website is meant to showcase several projects made by myself, Reece Carolan
 
 ## Developer Experience
 
-- TypeScript 4.1
+- TypeScript 4.2
 - ESLint 7
 - Prettier 2
 
