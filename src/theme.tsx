@@ -47,6 +47,40 @@ export default function getTheme(prefersDarkMode: boolean): Theme {
           color: prefersDarkMode ? "#c1c1c1" : "#666666",
         },
       },
+      components: {
+        MuiButton: {
+          styleOverrides: {
+            root: {
+              borderRadius: "12px",
+              textTransform: "none",
+              fontSize: "1.2rem",
+              lineHeight: 1.5,
+            },
+          },
+        },
+        MuiDialog: {
+          styleOverrides: {
+            paper: {
+              borderRadius: "12px",
+            },
+          },
+        },
+        MuiCard: {
+          styleOverrides: {
+            root: {
+              borderRadius: "12px",
+            },
+          },
+        },
+        MuiPaper: {
+          styleOverrides: {
+            rounded: {
+              borderRadius: "12px",
+              overflow: "hidden",
+            },
+          },
+        },
+      },
     })
   );
 }
