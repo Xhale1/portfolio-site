@@ -1,5 +1,4 @@
-import React from "react";
-import { Typography, Box, Link, Grid } from "@material-ui/core";
+import { Box, Grid, Link, Typography } from "@material-ui/core";
 
 export default function HeroSection(): JSX.Element {
   return (

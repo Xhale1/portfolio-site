@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { CssBaseline } from "@material-ui/core";
 import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useEffect, useState } from "react";
 import getTheme from "theme";
-import { CssBaseline } from "@material-ui/core";
 
 type Props = {
   children: React.ReactNode;

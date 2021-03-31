@@ -1,5 +1,4 @@
-import React from "react";
-import { Typography, Link, Box } from "@material-ui/core";
+import { Box, Link, Typography } from "@material-ui/core";
 
 export default function Footer(): JSX.Element {
   return (

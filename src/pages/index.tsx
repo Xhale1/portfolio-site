@@ -1,13 +1,12 @@
-import React from "react";
-import { projectData } from "data/ProjectData";
 import HeroSection from "components/HeroSection";
 import ProjectsSection from "components/ProjectsSection";
+import { projects } from "data/projects";
 
 export default function Index(): JSX.Element {
   return (
-    <React.Fragment>
+    <>
       <HeroSection />
-      <ProjectsSection projects={projectData} />
-    </React.Fragment>
+      <ProjectsSection projects={projects} />
+    </>
   );
 }

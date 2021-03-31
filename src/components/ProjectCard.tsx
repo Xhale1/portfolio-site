@@ -1,6 +1,5 @@
-import React from "react";
-import { Box, Typography, Grid, Card } from "@material-ui/core";
-import Project from "models/Project";
+import { Box, Button, Card, Grid, Typography } from "@material-ui/core";
+import Project from "interfaces/Project";
 import Image from "next/image";
 
 type Props = {
@@ -19,9 +18,19 @@ export default function ProjectCard({ project }: Props): JSX.Element {
             <Typography variant="body1" sx={{ maxWidth: 600 }}>
               {project.description}
             </Typography>
-            <Typography variant="body2" sx={{ maxWidth: 600, mt: 1 }}>
+            <Typography variant="body2" sx={{ maxWidth: 600, my: 1 }}>
               {project.date}. {project.subtitleDescription}
             </Typography>
+            {project.link !== undefined ? (
+              <Button
+                variant="contained"
+                href={project.link}
+                rel="noopener"
+                target="_blank"
+              >
+                Learn more
+              </Button>
+            ) : null}
           </Grid>
           <Grid
             item

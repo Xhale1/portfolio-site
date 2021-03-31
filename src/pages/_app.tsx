@@ -1,18 +1,18 @@
-import React from "react";
-import { Container } from "@material-ui/core";
-import Head from "next/head";
-import { AppProps } from "next/app";
-import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
+import { CacheProvider } from "@emotion/react";
+import { Container } from "@material-ui/core";
 import Footer from "components/Footer";
 import ThemeProvider from "context/themeContext";
+import { AppProps } from "next/app";
+import Head from "next/head";
+import { useEffect } from "react";
 
 export const cache = createCache({ key: "css", prepend: true });
 
 export default function App(props: AppProps): JSX.Element {
   const { Component, pageProps } = props;
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector("#jss-server-side");
     if (jssStyles) {

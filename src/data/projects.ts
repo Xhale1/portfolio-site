@@ -1,6 +1,6 @@
-import Project from "../models/Project";
+import Project from "interfaces/Project";
 
-export const projectData: Project[] = [
+export const projects: Project[] = [
   {
     title: "HelloPeople",
     date: "2020",
@@ -8,9 +8,10 @@ export const projectData: Project[] = [
     width: 622,
     height: 350,
     description:
-      "HelloPeople allows students to share and discover events across their college campus. I developed the backend and the native iOS, Android, and web apps.",
+      "HelloPeople allows students to share and discover events across their college campus. I developed the serverless backend,web app, and native iOS app",
     subtitleDescription:
-      "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React.js, Next.js, Node.js, Kotlin, Android Jetpack",
+      "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React.js, Next.js, Node.js",
+    link: "https://hellopeople.io",
     isWide: true,
     titleColor: "#2e7df6",
   },
@@ -58,7 +59,7 @@ export const projectData: Project[] = [
     width: 700,
     height: 350,
     description:
-      "I co-founded HelloStudios to create and maintain eco-friendly websites. We developed and hosted 18 websites serving over two million people.",
+      "I developed and hosted 18 websites serving over two million people under a company I co-founded.",
     subtitleDescription:
       "Wordpress, Cloudflare, Graphic Design (Adobe Photoshop, Illustrator, and InDesign)",
     isWide: true,
