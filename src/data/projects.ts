@@ -25,7 +25,7 @@ export const projects: Project[] = [
       "Turtle Fly was #1 in the App Store in 2011. I aquired it in 2016 and grew the downloads by 500% and the revenue by 700% over the previous year.",
     subtitleDescription: "Objective-C, Cocos2D, MRC, monolithic",
     isWide: false,
-    titleColor: "#43A047",
+    titleColor: "#388e3c",
   },
   {
     title: "Turtle Fly 2",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
       "Turtle Fly 2 is a ground-up rewrite of the original. It features a new physics and render engine, high-res graphics, and maintainable programming patterns.",
     subtitleDescription: "Objective-C, SpriteKit, ARC, MVC",
     isWide: false,
-    titleColor: "#43A047",
+    titleColor: "#388e3c",
   },
   {
     title: "HelloCRM",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
       "I developed a native iOS app which communicated with AWS to generate low-cost meal plans over any given week. Ingredient prices and availability was collected by web scraping.",
     subtitleDescription: "Swift 5, AWS (Lambda, Aurora), Public Speaking",
     isWide: false,
-    titleColor: "#ec4e3d",
+    titleColor: "#d32f2f",
   },
   {
     title: "The Guinea Pig",

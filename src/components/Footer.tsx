@@ -2,7 +2,7 @@ import { Box, Link, Typography } from "@material-ui/core";
 
 export default function Footer(): JSX.Element {
   return (
-    <Box sx={{ py: 3 }}>
+    <Box component="footer" sx={{ py: 3 }}>
       <Typography variant="body2" align="center">
         {"Built with "}
         <Link
