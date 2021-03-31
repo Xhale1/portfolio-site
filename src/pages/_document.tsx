@@ -18,6 +18,24 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
             rel="stylesheet"
           />
+          <link
+            rel="icon"
+            type="image/png"
+            href="/icons/favicon-16.png"
+            sizes="16x16"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            href="/icons/favicon-32.png"
+            sizes="32x32"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            href="/icons/favicon-48.png"
+            sizes="48x48"
+          />
         </Head>
         <body>
           <Main />
