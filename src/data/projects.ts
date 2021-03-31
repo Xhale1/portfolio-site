@@ -13,7 +13,7 @@ export const projects: Project[] = [
       "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React.js, Next.js, Node.js",
     link: "https://hellopeople.io",
     isWide: true,
-    titleColor: "#2e7df6",
+    titleColor: "#0069c0",
   },
   {
     title: "Turtle Fly",
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     subtitleDescription:
       "Swift 5, Google Cloud Platform (Firestore, Cloud Functions, Auth), Stripe",
     isWide: true,
-    titleColor: "#2e7df6",
+    titleColor: "#0069c0",
   },
   {
     title: "HelloStudios LLC",
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     subtitleDescription:
       "Wordpress, Cloudflare, Graphic Design (Adobe Photoshop, Illustrator, and InDesign)",
     isWide: true,
-    titleColor: "#2e7df6",
+    titleColor: "#0069c0",
   },
   {
     title: "Portfolio Site",
@@ -75,7 +75,7 @@ export const projects: Project[] = [
       "This website was designed to communicate my past work as clearly as possible.",
     subtitleDescription: "React.js, Next.js, TypeScript, Cloudflare",
     isWide: false,
-    titleColor: "#2e7df6",
+    titleColor: "#0069c0",
   },
   {
     title: "Yeats",
@@ -99,6 +99,6 @@ export const projects: Project[] = [
       "This is without a doubt the worst code I have ever written. When I was 10 I wanted to add a guinea pig to my favorite video game Minecraft, so I taught myself Java. One long summer later I finished my first software project, and I had my guinea pig.",
     subtitleDescription: "Java, Blender, Minecraft",
     isWide: false,
-    titleColor: "#2e7df6",
+    titleColor: "#0069c0",
   },
 ];

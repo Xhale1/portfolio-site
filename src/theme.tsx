@@ -1,7 +1,7 @@
 import {
   createMuiTheme,
-  Theme,
   responsiveFontSizes,
+  Theme,
 } from "@material-ui/core/styles";
 
 export default function getTheme(prefersDarkMode: boolean): Theme {
@@ -10,7 +10,7 @@ export default function getTheme(prefersDarkMode: boolean): Theme {
       palette: {
         mode: prefersDarkMode ? "dark" : "light",
         primary: {
-          main: "#2196F3",
+          main: "#0069c0",
         },
       },
       typography: {
