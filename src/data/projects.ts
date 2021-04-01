@@ -62,8 +62,19 @@ export const projects: Project[] = [
       "I developed and hosted 18 websites serving over two million people under a company I co-founded.",
     subtitleDescription:
       "Wordpress, Cloudflare, Graphic Design (Adobe Photoshop, Illustrator, and InDesign)",
-    isWide: true,
+    isWide: false,
     titleColor: "#0069c0",
+  },
+  {
+    title: "HelloSoftware",
+    date: "2020-2021",
+    image: "/assets/HelloStudios.png",
+    width: 700,
+    height: 350,
+    description: "Sharing open source templates and boilerplates.",
+    subtitleDescription: "Open source, GitHub, React.js, Next.js, Electron",
+    isWide: false,
+    titleColor: "#512DA8",
   },
   {
     title: "Portfolio Site",
@@ -84,8 +95,9 @@ export const projects: Project[] = [
     width: 175,
     height: 350,
     description:
-      "I developed a native iOS app which communicated with AWS to generate low-cost meal plans over any given week. Ingredient prices and availability was collected by web scraping.",
-    subtitleDescription: "Swift 5, AWS (Lambda, Aurora), Public Speaking",
+      "Won the 2020 Santa Clara University Hack for Humanity. I developed a native iOS app which communicated with AWS to generate low-cost meal plans over any given week.",
+    subtitleDescription:
+      "Swift 5, UIKit, AWS (Lambda, Aurora), Public Speaking",
     isWide: false,
     titleColor: "#d32f2f",
   },
