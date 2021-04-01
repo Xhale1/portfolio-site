@@ -12,6 +12,7 @@ export const projects: Project[] = [
     subtitleDescription:
       "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React.js, Next.js, Node.js",
     link: "https://hellopeople.io",
+    linkText: "Learn more",
     isWide: true,
     titleColor: "#0069c0",
   },
@@ -62,6 +63,8 @@ export const projects: Project[] = [
       "I developed and hosted 18 websites serving over two million people under a company I co-founded.",
     subtitleDescription:
       "Wordpress, Cloudflare, Graphic Design (Adobe Photoshop, Illustrator, and InDesign)",
+    link: "https://lensfirefilms.com/",
+    linkText: "One of my sites",
     isWide: false,
     titleColor: "#0069c0",
   },
@@ -74,6 +77,7 @@ export const projects: Project[] = [
     description: "Sharing open source templates and boilerplates.",
     subtitleDescription: "Open source, GitHub, React.js, Next.js, Electron",
     link: "https://hellosoftware.io",
+    linkText: "See projects",
     isWide: false,
     titleColor: "#512DA8",
   },

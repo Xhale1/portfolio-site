@@ -7,6 +7,7 @@ export default interface Project {
   description: string;
   subtitleDescription?: string;
   link?: string;
+  linkText?: string;
   isWide: boolean;
   titleColor: string;
 }

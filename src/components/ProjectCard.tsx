@@ -28,7 +28,7 @@ export default function ProjectCard({ project }: Props): JSX.Element {
                 rel="noopener"
                 target="_blank"
               >
-                Learn more
+                {project.linkText}
               </Button>
             ) : null}
           </Grid>
