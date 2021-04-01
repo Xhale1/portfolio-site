@@ -73,6 +73,7 @@ export const projects: Project[] = [
     height: 350,
     description: "Sharing open source templates and boilerplates.",
     subtitleDescription: "Open source, GitHub, React.js, Next.js, Electron",
+    link: "https://hellosoftware.io",
     isWide: false,
     titleColor: "#512DA8",
   },
