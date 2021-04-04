@@ -53,7 +53,7 @@ export default function getTheme(prefersDarkMode: boolean): Theme {
             root: {
               borderRadius: "12px",
               textTransform: "none",
-              fontSize: "1.2rem",
+              // fontSize: "1.2rem",
               lineHeight: 1.5,
             },
           },
