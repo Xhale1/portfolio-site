@@ -11,8 +11,11 @@ export const projects: Project[] = [
       "HelloPeople allows students to share and discover events across their college campus. I developed the serverless backend,web app, and native iOS app",
     subtitleDescription:
       "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React.js, Next.js, Node.js",
-    link: "https://hellopeople.io",
-    linkText: "Learn more",
+    links: [
+      { name: "Company site", url: "https://hellopeople.io" },
+      { name: "Web app demo", url: "https://demo.hellopeople.io" },
+      { name: "Source Code", url: "https://github.com/hellopeople-io" },
+    ],
     isWide: true,
     titleColor: "#0069c0",
   },
@@ -63,8 +66,7 @@ export const projects: Project[] = [
       "I developed and hosted 18 websites serving over two million people under a company I co-founded.",
     subtitleDescription:
       "Wordpress, Cloudflare, Graphic Design (Adobe Photoshop, Illustrator, and InDesign)",
-    link: "https://lensfirefilms.com/",
-    linkText: "One of my sites",
+    links: [{ name: "One of my sites", url: "https://lensfirefilms.com/" }],
     isWide: false,
     titleColor: "#0069c0",
   },
@@ -76,8 +78,7 @@ export const projects: Project[] = [
     height: 350,
     description: "Sharing open source templates and boilerplates.",
     subtitleDescription: "Open source, GitHub, React.js, Next.js, Electron",
-    link: "https://hellosoftware.io",
-    linkText: "See projects",
+    links: [{ name: "See projects", url: "https://hellosoftware.io" }],
     isWide: false,
     titleColor: "#512DA8",
   },
@@ -90,6 +91,9 @@ export const projects: Project[] = [
     description:
       "This website was designed to communicate my past work as clearly as possible.",
     subtitleDescription: "React.js, Next.js, TypeScript, Cloudflare",
+    links: [
+      { name: "Source Code", url: "https://github.com/Xhale1/portfolio-site" },
+    ],
     isWide: false,
     titleColor: "#0069c0",
   },

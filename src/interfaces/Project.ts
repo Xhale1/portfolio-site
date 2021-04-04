@@ -1,3 +1,5 @@
+import Link from "interfaces/Link";
+
 export default interface Project {
   title: string;
   date: string;
@@ -6,8 +8,7 @@ export default interface Project {
   height: number;
   description: string;
   subtitleDescription?: string;
-  link?: string;
-  linkText?: string;
+  links?: Link[];
   isWide: boolean;
   titleColor: string;
 }

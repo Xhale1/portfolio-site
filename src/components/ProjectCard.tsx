@@ -21,15 +21,21 @@ export default function ProjectCard({ project }: Props): JSX.Element {
             <Typography variant="body2" sx={{ maxWidth: 600, my: 1 }}>
               {project.date}. {project.subtitleDescription}
             </Typography>
-            {project.link !== undefined ? (
-              <Button
-                variant="contained"
-                href={project.link}
-                rel="noopener"
-                target="_blank"
-              >
-                {project.linkText}
-              </Button>
+            {project.links !== undefined ? (
+              <>
+                {project.links.map((link, index) => (
+                  <Button
+                    key={index}
+                    variant="contained"
+                    href={link.url}
+                    rel="noopener"
+                    target="_blank"
+                    sx={{ mr: 2, mb: 2 }}
+                  >
+                    {link.name}
+                  </Button>
+                ))}
+              </>
             ) : null}
           </Grid>
           <Grid

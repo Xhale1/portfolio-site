@@ -7,8 +7,8 @@ type Props = {
 };
 
 export default function ProjectsSection(props: Props): JSX.Element {
-  const projects = props.projects.map((project) => (
-    <ProjectCard project={project} key={project.title} />
+  const projects = props.projects.map((project, index) => (
+    <ProjectCard project={project} key={index} />
   ));
 
   return (
