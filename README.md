@@ -2,17 +2,12 @@
 
 This website is meant to showcase several projects made by myself, Reece Carolan.
 
-## Core Technologies
+## Major technologies
 
-- React.js 17
-- Next.js 10
-- Material-UI 5
-
-## Developer Experience
-
-- TypeScript 4.2
-- ESLint 7
-- Prettier 2
+- [React.js 17](https://reactjs.org/)
+- [Next.js 10](https://nextjs.org/)
+- [Material-UI 5](https://next.material-ui.com/)
+- Typescript, ESLint, and Prettier are used to improve the developer experience
 
 ## Project Info
 
@@ -23,5 +18,5 @@ This website is meant to showcase several projects made by myself, Reece Carolan
 
 ## Performance
 
-- Largest contentful paint takes 0.4 seconds over 10mb/s internet and transfers ~236kb of data.
+- Largest contentful paint takes 0.4 seconds over 10mb/s internet and transfers ~250kb of data.
 - Project achieves a perfect score on a lighthouse audit.
