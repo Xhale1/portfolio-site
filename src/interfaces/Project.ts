@@ -10,5 +10,6 @@ export default interface Project {
   subtitleDescription?: string;
   links?: Link[];
   isWide: boolean;
+  isWebScreenshot?: boolean;
   titleColor: string;
 }

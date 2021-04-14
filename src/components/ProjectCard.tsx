@@ -43,22 +43,40 @@ export default function ProjectCard({ project }: Props): JSX.Element {
             sx={{ display: "flex", flexGrow: 1, flexShrink: 1, mt: 3 }}
             alignItems="flex-end"
           >
-            <Box
-              sx={{
-                justifyContent: "center",
-                alignItems: "center",
-                display: "flex",
-                width: "100%",
-              }}
-            >
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={project.width}
-                height={project.height}
-                // quality={90}
-              />
-            </Box>
+            {project.isWebScreenshot === true ? (
+              <Box
+                sx={{
+                  borderRadius: 4,
+                  overflow: "hidden",
+                  boxShadow: "1px 1px 60px 0 rgba(0, 0, 0, .15)",
+                  display: "flex",
+                }}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={project.width}
+                  height={project.height}
+                />
+              </Box>
+            ) : (
+              <Box
+                sx={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  display: "flex",
+                  width: "100%",
+                }}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={project.width}
+                  height={project.height}
+                  // quality={90}
+                />
+              </Box>
+            )}
           </Grid>
         </Grid>
       </Card>

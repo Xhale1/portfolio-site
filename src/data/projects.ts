@@ -57,6 +57,23 @@ export const projects: Project[] = [
     titleColor: "#0069c0",
   },
   {
+    title: "When to Greet",
+    date: "2021",
+    image: "/assets/when-to-greet.png",
+    width: 976,
+    height: 880,
+    description: "Find the best time for a group of people to get together.",
+    subtitleDescription:
+      "TypeScript, React.js, Next.js, Google Cloud Platform (Firestore, Cloud Functions, Auth)",
+    links: [
+      { name: "Live site", url: "https://whentogreet.com" },
+      { name: "Source Code", url: "https://github.com/Xhale1/when-to-greet" },
+    ],
+    isWide: false,
+    isWebScreenshot: true,
+    titleColor: "#0069c0",
+  },
+  {
     title: "HelloStudios LLC",
     date: "2018-2020",
     image: "/assets/HelloStudios.png",
