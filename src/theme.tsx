@@ -12,6 +12,9 @@ export default function getTheme(prefersDarkMode: boolean): Theme {
         primary: {
           main: "#0069c0",
         },
+        background: {
+          default: prefersDarkMode ? "#424242" : "#F7F7F7",
+        },
       },
       typography: {
         fontWeightMedium: 600,
