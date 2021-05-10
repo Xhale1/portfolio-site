@@ -1,12 +1,12 @@
 import {
-  createMuiTheme,
+  createTheme,
   responsiveFontSizes,
   Theme,
 } from "@material-ui/core/styles";
 
 export default function getTheme(prefersDarkMode: boolean): Theme {
   return responsiveFontSizes(
-    createMuiTheme({
+    createTheme({
       palette: {
         mode: prefersDarkMode ? "dark" : "light",
         primary: {
