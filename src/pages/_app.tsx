@@ -5,24 +5,16 @@ import Footer from "components/Footer";
 import ThemeProvider from "context/themeContext";
 import { AppProps } from "next/app";
 import Head from "next/head";
-import { useEffect } from "react";
 
-export const cache = createCache({ key: "css", prepend: true });
+const cache = createCache({ key: "css", prepend: true });
+cache.compat = true;
 
 export default function App(props: AppProps): JSX.Element {
   const { Component, pageProps } = props;
 
-  useEffect(() => {
-    // Remove the server-side injected CSS.
-    const jssStyles = document.querySelector("#jss-server-side");
-    if (jssStyles) {
-      jssStyles.parentElement?.removeChild(jssStyles);
-    }
-  }, []);
-
   return (
-    <ThemeProvider>
-      <CacheProvider value={cache}>
+    <CacheProvider value={cache}>
+      <ThemeProvider>
         <Head>
           <title>Reece Carolan - Developer</title>
           <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -35,7 +27,7 @@ export default function App(props: AppProps): JSX.Element {
           <Component {...pageProps} />
         </Container>
         <Footer />
-      </CacheProvider>
-    </ThemeProvider>
+      </ThemeProvider>
+    </CacheProvider>
   );
 }
