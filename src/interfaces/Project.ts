@@ -1,4 +1,4 @@
-import Link from "interfaces/Link";
+import Link from "interfaces/link";
 
 export default interface Project {
   title: string;

@@ -1,5 +1,5 @@
 import { Box, Button, Card, Grid, Typography } from "@material-ui/core";
-import Project from "interfaces/Project";
+import Project from "interfaces/project";
 import Image from "next/image";
 
 type Props = {
