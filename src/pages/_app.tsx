@@ -18,15 +18,15 @@ export default function App(props: MyAppProps): JSX.Element {
 
   return (
     <CacheProvider value={emotionCache}>
+      <Head>
+        <title>Reece Carolan - Software Engineer</title>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta
+          name="description"
+          content="Hello! I'm a fullstack and iOS developer with a passion for user experience and communication."
+        />
+      </Head>
       <ThemeProvider>
-        <Head>
-          <title>Reece Carolan - Software Engineer</title>
-          <meta name="viewport" content="initial-scale=1, width=device-width" />
-          <meta
-            name="description"
-            content="Hello! I'm a fullstack and iOS developer with a passion for user experience and communication."
-          />
-        </Head>
         <Container maxWidth="md">
           <Component {...pageProps} />
         </Container>
