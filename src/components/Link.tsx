@@ -1,4 +1,4 @@
-import MuiLink, { LinkProps as MuiLinkProps } from "@material-ui/core/Link";
+import MuiLink, { LinkProps as MuiLinkProps } from "@mui/material/Link";
 import clsx from "clsx";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import { useRouter } from "next/router";

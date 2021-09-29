@@ -2,7 +2,7 @@ import {
   createTheme,
   responsiveFontSizes,
   Theme,
-} from "@material-ui/core/styles";
+} from "@mui/material/styles";
 
 export default function getTheme(prefersDarkMode: boolean): Theme {
   return responsiveFontSizes(

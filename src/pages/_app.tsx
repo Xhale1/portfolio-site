@@ -1,5 +1,5 @@
 import { CacheProvider, EmotionCache } from "@emotion/react";
-import { Container } from "@material-ui/core";
+import { Container } from "@mui/material";
 import Footer from "components/Footer";
 import ThemeProvider from "context/themeContext";
 import createEmotionCache from "lib/createEmotionCache";

@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { Grid } from "@mui/material";
 import Project from "interfaces/project";
 import ProjectCard from "./ProjectCard";
 
