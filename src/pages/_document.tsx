@@ -1,7 +1,6 @@
 import createEmotionServer from "@emotion/server/create-instance";
 import createEmotionCache from "lib/createEmotionCache";
 import Document, { Head, Html, Main, NextScript } from "next/document";
-import { Children } from "react";
 
 export default class MyDocument extends Document {
   render() {
@@ -31,6 +30,8 @@ export default class MyDocument extends Document {
             href="/icons/favicon-48.png"
             sizes="48x48"
           />
+          {/* Inject MUI styles first to match with the prepend: true configuration. */}
+          {(this.props as any).emotionStyleTags}
         </Head>
         <body>
           <Main />
@@ -41,6 +42,8 @@ export default class MyDocument extends Document {
   }
 }
 
+// `getInitialProps` belongs to `_document` (instead of `_app`),
+// it's compatible with static-site generation (SSG).
 MyDocument.getInitialProps = async (ctx) => {
   const originalRenderPage = ctx.renderPage;
 
@@ -51,14 +54,15 @@ MyDocument.getInitialProps = async (ctx) => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      // eslint-disable-next-line react/display-name
-      enhanceApp: (App: any) => (props) =>
-        <App emotionCache={cache} {...props} />,
+      enhanceApp: (App: any) =>
+        function EnhanceApp(props) {
+          return <App emotionCache={cache} {...props} />;
+        },
     });
 
   const initialProps = await Document.getInitialProps(ctx);
   // This is important. It prevents emotion to render invalid HTML.
-  // See https://github.com/mui-org/material-ui/issues/26561#issuecomment-855286153
+  // See https://github.com/mui/material-ui/issues/26561#issuecomment-855286153
   const emotionStyles = extractCriticalToChunks(initialProps.html);
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     <style
@@ -71,7 +75,6 @@ MyDocument.getInitialProps = async (ctx) => {
 
   return {
     ...initialProps,
-    // Styles fragment is rendered after the app and page rendering finish.
-    styles: [...Children.toArray(initialProps.styles), ...emotionStyleTags],
+    emotionStyleTags,
   };
 };
