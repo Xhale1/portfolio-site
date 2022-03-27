@@ -2,7 +2,7 @@ import HeroSection from "components/HeroSection";
 import ProjectsSection from "components/ProjectsSection";
 import { projects } from "data/projects";
 
-export default function Index(): JSX.Element {
+export default function Index() {
   return (
     <>
       <HeroSection />

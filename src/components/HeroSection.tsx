@@ -1,6 +1,6 @@
 import { Box, Grid, Link, Typography } from "@mui/material";
 
-export default function HeroSection(): JSX.Element {
+export default function HeroSection() {
   return (
     <Grid container spacing={3} sx={{ py: 6 }}>
       <Grid item xs={12} md={6}>

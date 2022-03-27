@@ -6,7 +6,7 @@ type Props = {
   project: Project;
 };
 
-export default function ProjectCard({ project }: Props): JSX.Element {
+export default function ProjectCard({ project }: Props) {
   return (
     <Grid item xs={12} sm={project.isWide ? 12 : 6}>
       <Card variant="outlined" sx={{ height: "100%", p: 4 }}>

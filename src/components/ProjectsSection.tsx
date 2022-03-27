@@ -6,7 +6,7 @@ type Props = {
   projects: Project[];
 };
 
-export default function ProjectsSection(props: Props): JSX.Element {
+export default function ProjectsSection(props: Props) {
   const projects = props.projects.map((project, index) => (
     <ProjectCard project={project} key={index} />
   ));

@@ -1,6 +1,6 @@
 import { Box, Link, Typography } from "@mui/material";
 
-export default function Footer(): JSX.Element {
+export default function Footer() {
   return (
     <Box component="footer" sx={{ py: 3 }}>
       <Typography variant="body2" align="center">
