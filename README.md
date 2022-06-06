@@ -1,6 +1,6 @@
 # Reece's Portfolio Website
 
-This website is meant to showcase several projects made by myself, Reece Carolan.
+Static website showcasing projects by myself, Reece Carolan.
 
 ## Major technologies
 
@@ -18,5 +18,5 @@ This website is meant to showcase several projects made by myself, Reece Carolan
 
 ## Performance
 
-- Largest contentful paint takes 0.4 seconds over 10mb/s internet and transfers ~250kb of data.
+- Largest contentful paint takes ~0.4 seconds over 10mb/s internet and transfers ~250kb of data.
 - Project achieves a near perfect score on a lighthouse audit.
