@@ -1,4 +1,8 @@
-import { Box, Grid, Link, Typography } from "@mui/material";
+import { Box, Grid, Link, styled, Typography } from "@mui/material";
+
+const ListItem = styled("li")(({ theme }) => ({
+  margin: theme.spacing(0.5),
+}));
 
 export default function HeroSection() {
   return (
@@ -8,17 +12,44 @@ export default function HeroSection() {
         <Typography variant="body1">
           Full-stack software engineer at CoPilot.
         </Typography>
-        <Box sx={{ my: 3 }}>
-          <Link href="tel:6034224533" sx={{ pr: 2 }}>
-            (603) 422-4533
-          </Link>
-          <Link href="mailto:reececarolan@gmail.com">
-            reececarolan@gmail.com
-          </Link>
+        <Box
+          sx={{
+            my: 3,
+            display: "flex",
+            justifyContent: "flex-start",
+            flexWrap: "wrap",
+            listStyle: "none",
+            p: 0,
+          }}
+          component="ul"
+        >
+          <ListItem>
+            <Link href="tel:6034224533">(603) 422-4533</Link>
+          </ListItem>
+          <ListItem>
+            <Link href="mailto:reececarolan@gmail.com">
+              reececarolan@gmail.com
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://github.com/Xhale1"
+              rel="noopener"
+              target="_blank"
+            >
+              GitHub
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.linkedin.com/in/reece-carolan/"
+              rel="noopener"
+              target="_blank"
+            >
+              LinkedIn
+            </Link>
+          </ListItem>
         </Box>
-        <Link href="https://github.com/Xhale1" rel="noopener" target="_blank">
-          GitHub
-        </Link>
       </Grid>
     </Grid>
   );

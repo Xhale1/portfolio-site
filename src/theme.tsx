@@ -41,14 +41,18 @@ export default function getTheme(prefersDarkMode: boolean): Theme {
         },
       },
       shape: {
-        borderRadius: 10,
+        borderRadius: 16,
       },
       components: {
         MuiButton: {
+          defaultProps: {
+            disableElevation: true,
+          },
           styleOverrides: {
             root: {
               textTransform: "none",
               lineHeight: 1.5,
+              borderRadius: 8,
             },
           },
         },
