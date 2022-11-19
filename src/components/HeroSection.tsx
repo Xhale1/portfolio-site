@@ -24,9 +24,6 @@ export default function HeroSection() {
           component="ul"
         >
           <ListItem>
-            <Link href="tel:6034224533">(603) 422-4533</Link>
-          </ListItem>
-          <ListItem>
             <Link href="mailto:reececarolan@gmail.com">
               reececarolan@gmail.com
             </Link>
