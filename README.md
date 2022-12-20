@@ -5,7 +5,7 @@ Static website showcasing projects by myself, Reece Carolan.
 ## Major technologies
 
 - [React.js 18](https://reactjs.org/)
-- [Next.js 12](https://nextjs.org/)
+- [Next.js 13](https://nextjs.org/)
 - [MUI 5](https://mui.com/)
 - Typescript, ESLint, and Prettier are used to improve the developer experience
 
