@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 import Footer from "components/Footer";
 import ThemeProvider from "context/themeContext";
 import createEmotionCache from "lib/createEmotionCache";
-import { AppProps } from "next/app";
+import type { AppProps } from "next/app";
 import Head from "next/head";
 
 // Client-side cache, shared for the whole session of the user in the browser.
