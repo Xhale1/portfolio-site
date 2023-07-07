@@ -9,7 +9,7 @@ import Head from "next/head";
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
-interface MyAppProps extends AppProps {
+export interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
 }
 

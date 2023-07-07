@@ -1,9 +1,21 @@
-import createEmotionServer from "@emotion/server/create-instance";
-import createEmotionCache from "lib/createEmotionCache";
-import Document, { Head, Html, Main, NextScript } from "next/document";
+import createEmotionServer from '@emotion/server/create-instance';
+import createEmotionCache from 'lib/createEmotionCache';
+import { type AppType } from 'next/app';
+import Document, {
+  Head,
+  Html,
+  Main,
+  NextScript,
+  type DocumentContext,
+  type DocumentProps,
+} from 'next/document';
+import * as React from 'react';
+import { type MyAppProps } from './_app';
 
-export default class MyDocument extends Document {
-  override render() {
+interface MyDocumentProps extends DocumentProps {
+  emotionStyleTags: JSX.Element[];
+}
+export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
     return (
       <Html lang="en">
         <Head>
@@ -31,7 +43,7 @@ export default class MyDocument extends Document {
             sizes="48x48"
           />
           <meta name="emotion-insertion-point" content="" />
-          {(this.props as any).emotionStyleTags}
+        {emotionStyleTags}
         </Head>
         <body>
           <Main />
@@ -39,12 +51,11 @@ export default class MyDocument extends Document {
         </body>
       </Html>
     );
-  }
 }
 
 // `getInitialProps` belongs to `_document` (instead of `_app`),
 // it's compatible with static-site generation (SSG).
-MyDocument.getInitialProps = async (ctx) => {
+MyDocument.getInitialProps = async (ctx: DocumentContext) => {
   // Resolution order
   //
   // On the server:
@@ -76,7 +87,7 @@ MyDocument.getInitialProps = async (ctx) => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: (App: any) =>
+      enhanceApp: (App: React.ComponentType<React.ComponentProps<AppType> & MyAppProps>) =>
         function EnhanceApp(props) {
           return <App emotionCache={cache} {...props} />;
         },
@@ -88,7 +99,7 @@ MyDocument.getInitialProps = async (ctx) => {
   const emotionStyles = extractCriticalToChunks(initialProps.html);
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     <style
-      data-emotion={`${style.key} ${style.ids.join(" ")}`}
+      data-emotion={`${style.key} ${style.ids.join(' ')}`}
       key={style.key}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: style.css }}
