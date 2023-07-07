@@ -1,4 +1,4 @@
-import { CacheProvider, EmotionCache } from "@emotion/react";
+import { CacheProvider, type EmotionCache } from "@emotion/react";
 import { Container } from "@mui/material";
 import Footer from "components/Footer";
 import ThemeProvider from "context/themeContext";

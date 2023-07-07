@@ -1,4 +1,4 @@
-import { createTheme, responsiveFontSizes, Theme } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes, type Theme } from "@mui/material/styles";
 
 export default function getTheme(prefersDarkMode: boolean): Theme {
   return responsiveFontSizes(
