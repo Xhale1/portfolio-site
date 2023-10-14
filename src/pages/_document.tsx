@@ -1,6 +1,6 @@
-import createEmotionServer from '@emotion/server/create-instance';
-import createEmotionCache from 'lib/createEmotionCache';
-import { type AppType } from 'next/app';
+import createEmotionServer from "@emotion/server/create-instance";
+import createEmotionCache from "lib/createEmotionCache";
+import { type AppType } from "next/app";
 import Document, {
   Head,
   Html,
@@ -8,49 +8,49 @@ import Document, {
   NextScript,
   type DocumentContext,
   type DocumentProps,
-} from 'next/document';
-import * as React from 'react';
-import { type MyAppProps } from './_app';
+} from "next/document";
+import * as React from "react";
+import { type MyAppProps } from "./_app";
 
 interface MyDocumentProps extends DocumentProps {
   emotionStyleTags: JSX.Element[];
 }
 export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
-    return (
-      <Html lang="en">
-        <Head>
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            href="/icons/favicon-16.png"
-            sizes="16x16"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            href="/icons/favicon-32.png"
-            sizes="32x32"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            href="/icons/favicon-48.png"
-            sizes="48x48"
-          />
-          <meta name="emotion-insertion-point" content="" />
+  return (
+    <Html lang="en">
+      <Head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/icons/favicon-16.png"
+          sizes="16x16"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/icons/favicon-32.png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/icons/favicon-48.png"
+          sizes="48x48"
+        />
+        <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
+      </Head>
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  );
 }
 
 // `getInitialProps` belongs to `_document` (instead of `_app`),
@@ -87,7 +87,9 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: (App: React.ComponentType<React.ComponentProps<AppType> & MyAppProps>) =>
+      enhanceApp: (
+        App: React.ComponentType<React.ComponentProps<AppType> & MyAppProps>,
+      ) =>
         function EnhanceApp(props) {
           return <App emotionCache={cache} {...props} />;
         },
@@ -99,7 +101,7 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
   const emotionStyles = extractCriticalToChunks(initialProps.html);
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     <style
-      data-emotion={`${style.key} ${style.ids.join(' ')}`}
+      data-emotion={`${style.key} ${style.ids.join(" ")}`}
       key={style.key}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: style.css }}
