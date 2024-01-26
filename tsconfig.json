@@ -29,8 +29,8 @@
     "jsxImportSource": "@emotion/react",
     "incremental": true,
     "allowJs": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "src"]
+  "include": ["next-env.d.ts", "src"],
 }
