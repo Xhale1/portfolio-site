@@ -26,7 +26,7 @@ export const projects: Project[] = [
     width: 350,
     height: 350,
     description:
-      "Turtle Fly was #1 in the App Store in 2011. I aquired it in 2016 and grew the downloads by 500% and the revenue by 700% over the previous year.",
+      "Turtle Fly was #1 in the App Store in 2011. I acquired it in 2016 and grew the downloads by 500% and the revenue by 700% over the previous year.",
     subtitleDescription: "Objective-C, Cocos2D, MRC, monolithic",
     isWide: false,
     titleColor: "#388e3c",
