@@ -11,11 +11,7 @@ export const projects: Project[] = [
       "I developed the entire HelloPeople platform including the serverless backend, web app, and native iOS app. HelloPeople allows students to share and discover events across their college campus.",
     subtitleDescription:
       "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React.js, Next.js, Node.js",
-    links: [
-      { name: "Company site", url: "https://hellopeople.io" },
-      { name: "Web app demo", url: "https://demo.hellopeople.io" },
-      { name: "Source code", url: "https://github.com/hellopeople-io" },
-    ],
+    links: [{ name: "Source code", url: "https://github.com/hellopeople-io" }],
     isWide: true,
     titleColor: "#0069c0",
   },
@@ -66,7 +62,6 @@ export const projects: Project[] = [
     subtitleDescription:
       "TypeScript, React.js, Next.js, Google Cloud Platform (Firestore, Cloud Functions, Auth)",
     links: [
-      { name: "Live site", url: "https://whentogreet.com" },
       { name: "Source Code", url: "https://github.com/Xhale1/when-to-greet" },
     ],
     isWide: false,
@@ -95,7 +90,7 @@ export const projects: Project[] = [
     height: 350,
     description: "Sharing open source templates and boilerplates.",
     subtitleDescription: "Open source, GitHub, React.js, Next.js, Electron",
-    links: [{ name: "See projects", url: "https://hellosoftware.io" }],
+    links: [{ name: "GitHub", url: "https://github.com/hellosoftware-io" }],
     isWide: false,
     titleColor: "#512DA8",
   },
