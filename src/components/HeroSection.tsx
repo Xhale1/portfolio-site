@@ -10,7 +10,8 @@ export default function HeroSection() {
       <Grid item xs={12} md={6}>
         <Typography variant="h1">Reece Carolan</Typography>
         <Typography variant="body1">
-          Full-stack software engineer at CoPilot.
+          Founding full-stack software engineer at{" "}
+          <Link href="https://www.trainwell.net">trainwell</Link>.
         </Typography>
         <Box
           sx={{
