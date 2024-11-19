@@ -12,23 +12,23 @@
     "type-check": "tsc --pretty --noEmit"
   },
   "dependencies": {
-    "@emotion/cache": "^11.11.0",
-    "@emotion/react": "^11.11.4",
+    "@emotion/cache": "^11.13.1",
+    "@emotion/react": "^11.13.3",
     "@emotion/server": "^11.11.0",
-    "@emotion/styled": "^11.11.5",
-    "@mui/material": "^5.15.19",
-    "next": "^14.2.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^5.16.7",
+    "next": "^14.2.18",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/node": "^20.12.13",
-    "@types/react": "^18.3.3",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^14.2.3",
+    "@types/node": "^20.17.6",
+    "@types/react": "^18.3.12",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.18",
     "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.2.5",
-    "typescript": "^5.4.5"
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
   },
   "engines": {
     "node": ">=20.9.0"
