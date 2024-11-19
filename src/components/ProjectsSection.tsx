@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import type Project from "interfaces/project";
 import ProjectCard from "./ProjectCard";
 

@@ -1,4 +1,5 @@
-import { Box, Button, Card, Grid, Typography } from "@mui/material";
+import { Box, Button, Card, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import type Project from "interfaces/project";
 import Image from "next/legacy/image";
 
@@ -8,10 +9,15 @@ type Props = {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <Grid item xs={12} sm={project.isWide ? 12 : 6}>
+    <Grid
+      size={{
+        xs: 12,
+        sm: project.isWide ? 12 : 6,
+      }}
+    >
       <Card variant="outlined" sx={{ height: "100%", p: 4 }}>
         <Grid container direction="column" sx={{ height: "100%" }}>
-          <Grid item>
+          <Grid>
             <Typography variant="h2" sx={{ mb: 1, color: project.titleColor }}>
               {project.title}
             </Typography>
@@ -39,7 +45,6 @@ export default function ProjectCard({ project }: Props) {
             ) : null}
           </Grid>
           <Grid
-            item
             sx={{ display: "flex", flexGrow: 1, flexShrink: 1, mt: 3 }}
             alignItems="flex-end"
           >

@@ -1,4 +1,5 @@
-import { Box, Grid, Link, styled, Typography } from "@mui/material";
+import { Box, Link, styled, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 
 const ListItem = styled("li")(({ theme }) => ({
   margin: theme.spacing(0.5),
@@ -7,7 +8,12 @@ const ListItem = styled("li")(({ theme }) => ({
 export default function HeroSection() {
   return (
     <Grid container spacing={3} sx={{ py: 6 }}>
-      <Grid item xs={12} md={6}>
+      <Grid
+        size={{
+          xs: 12,
+          md: 6,
+        }}
+      >
         <Typography variant="h1">Reece Carolan</Typography>
         <Typography variant="body1">
           Founding full-stack software engineer at{" "}
