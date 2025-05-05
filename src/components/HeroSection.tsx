@@ -1,5 +1,4 @@
-import { Box, Link, styled, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import { Box, Grid, Link, styled, Typography } from "@mui/material";
 
 const ListItem = styled("li")(({ theme }) => ({
   margin: theme.spacing(0.5),

@@ -1,23 +1,15 @@
-import { CacheProvider, type EmotionCache } from "@emotion/react";
 import { Container } from "@mui/material";
+import { AppCacheProvider } from "@mui/material-nextjs/v15-pagesRouter";
 import Footer from "components/Footer";
 import ThemeProvider from "context/themeContext";
-import createEmotionCache from "lib/createEmotionCache";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
-// Client-side cache, shared for the whole session of the user in the browser.
-const clientSideEmotionCache = createEmotionCache();
-
-export interface MyAppProps extends AppProps {
-  emotionCache?: EmotionCache;
-}
-
-export default function App(props: MyAppProps): JSX.Element {
-  const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+export default function App(props: AppProps) {
+  const { Component, pageProps } = props;
 
   return (
-    <CacheProvider value={emotionCache}>
+    <AppCacheProvider {...props}>
       <Head>
         <title>Reece Carolan - Software Engineer</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -32,6 +24,6 @@ export default function App(props: MyAppProps): JSX.Element {
         </Container>
         <Footer />
       </ThemeProvider>
-    </CacheProvider>
+    </AppCacheProvider>
   );
 }

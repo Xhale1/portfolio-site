@@ -1,5 +1,4 @@
-import { Box, Button, Card, Typography } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import { Box, Button, Card, Grid, Typography } from "@mui/material";
 import type Project from "interfaces/project";
 import Image from "next/legacy/image";
 
