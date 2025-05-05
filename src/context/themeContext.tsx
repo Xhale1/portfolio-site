@@ -8,7 +8,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-export default function ThemeProvider({ children }: Props): JSX.Element {
+export default function ThemeProvider({ children }: Props) {
   const [theme, setTheme] = useState(getTheme(false));
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");

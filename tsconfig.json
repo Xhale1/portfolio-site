@@ -1,6 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Node 18 + ESM + Strictest",
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "module": "esnext",
@@ -21,16 +20,14 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "verbatimModuleSyntax": true,
-    "checkJs": true,
     "noEmit": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "src",
     "jsxImportSource": "@emotion/react",
     "incremental": true,
-    "allowJs": true,
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "src"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
