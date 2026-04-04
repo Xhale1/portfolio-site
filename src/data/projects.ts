@@ -61,9 +61,7 @@ export const projects: Project[] = [
     description: "Find the best time for a group of people to get together.",
     subtitleDescription:
       "TypeScript, React.js, Next.js, Google Cloud Platform (Firestore, Cloud Functions, Auth)",
-    links: [
-      { name: "Source Code", url: "https://github.com/Xhale1/when-to-greet" },
-    ],
+    links: [{ name: "Source Code", url: "https://github.com/Xhale1/when-to-greet" }],
     isWide: false,
     isWebScreenshot: true,
     titleColor: "#0069c0",
@@ -100,12 +98,9 @@ export const projects: Project[] = [
     image: "/assets/reeceApp.png",
     width: 350,
     height: 350,
-    description:
-      "This website was designed to communicate my past work as clearly as possible.",
+    description: "This website was designed to communicate my past work as clearly as possible.",
     subtitleDescription: "React.js, Next.js, TypeScript, Cloudflare",
-    links: [
-      { name: "Source code", url: "https://github.com/Xhale1/portfolio-site" },
-    ],
+    links: [{ name: "Source code", url: "https://github.com/Xhale1/portfolio-site" }],
     isWide: false,
     titleColor: "#0069c0",
   },
@@ -117,8 +112,7 @@ export const projects: Project[] = [
     height: 350,
     description:
       "Won the 2020 Santa Clara University Hack for Humanity. I developed a native iOS app which communicated with AWS to generate low-cost meal plans over any given week.",
-    subtitleDescription:
-      "Swift 5, UIKit, AWS (Lambda, Aurora), Public Speaking",
+    subtitleDescription: "Swift 5, UIKit, AWS (Lambda, Aurora), Public Speaking",
     isWide: false,
     titleColor: "#d32f2f",
   },

@@ -42,10 +42,7 @@ export default function ProjectCard({ project }: Props) {
               </>
             ) : null}
           </Grid>
-          <Grid
-            sx={{ display: "flex", flexGrow: 1, flexShrink: 1, mt: 3 }}
-            alignItems="flex-end"
-          >
+          <Grid sx={{ display: "flex", flexGrow: 1, flexShrink: 1, mt: 3 }} alignItems="flex-end">
             {project.isWebScreenshot === true ? (
               <Box
                 sx={{

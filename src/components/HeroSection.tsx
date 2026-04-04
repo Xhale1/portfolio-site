@@ -30,25 +30,15 @@ export default function HeroSection() {
           component="ul"
         >
           <ListItem>
-            <Link href="mailto:reececarolan@gmail.com">
-              reececarolan@gmail.com
-            </Link>
+            <Link href="mailto:reececarolan@gmail.com">reececarolan@gmail.com</Link>
           </ListItem>
           <ListItem>
-            <Link
-              href="https://github.com/Xhale1"
-              rel="noopener"
-              target="_blank"
-            >
+            <Link href="https://github.com/Xhale1" rel="noopener" target="_blank">
               GitHub
             </Link>
           </ListItem>
           <ListItem>
-            <Link
-              href="https://www.linkedin.com/in/reece-carolan/"
-              rel="noopener"
-              target="_blank"
-            >
+            <Link href="https://www.linkedin.com/in/reece-carolan/" rel="noopener" target="_blank">
               LinkedIn
             </Link>
           </ListItem>

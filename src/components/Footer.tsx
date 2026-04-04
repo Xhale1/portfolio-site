@@ -5,21 +5,11 @@ export default function Footer() {
     <Box component="footer" sx={{ py: 3 }}>
       <Typography variant="body2" align="center">
         {"Built with "}
-        <Link
-          color="inherit"
-          target="_blank"
-          rel="noopener"
-          href="https://reactjs.org/"
-        >
+        <Link color="inherit" target="_blank" rel="noopener" href="https://reactjs.org/">
           React.js
         </Link>
         {" and "}
-        <Link
-          color="inherit"
-          target="_blank"
-          rel="noopener"
-          href="https://nextjs.org/"
-        >
+        <Link color="inherit" target="_blank" rel="noopener" href="https://nextjs.org/">
           Next.js
         </Link>
       </Typography>
