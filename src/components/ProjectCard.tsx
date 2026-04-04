@@ -1,6 +1,5 @@
 import { Box, Button, Card, Grid, Typography } from "@mui/material";
-import type Project from "interfaces/project";
-import Image from "next/legacy/image";
+import type Project from "../interfaces/project";
 
 type Props = {
   project: Project;
@@ -56,11 +55,14 @@ export default function ProjectCard({ project }: Props) {
                   display: "flex",
                 }}
               >
-                <Image
+                <img
                   src={project.image}
                   alt={project.title}
                   width={project.width}
-                  height={project.height}
+                  style={{
+                    maxWidth: "100%",
+                    objectFit: "contain",
+                  }}
                 />
               </Box>
             ) : (
@@ -72,12 +74,14 @@ export default function ProjectCard({ project }: Props) {
                   width: "100%",
                 }}
               >
-                <Image
+                <img
                   src={project.image}
                   alt={project.title}
                   width={project.width}
-                  height={project.height}
-                  // quality={90}
+                  style={{
+                    maxWidth: "100%",
+                    objectFit: "contain",
+                  }}
                 />
               </Box>
             )}

@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import type Project from "interfaces/project";
+import type Project from "../interfaces/project";
 import ProjectCard from "./ProjectCard";
 
 type Props = {

@@ -1,3 +1,4 @@
-onlyBuiltDependencies:
-  - sharp
-  - unrs-resolver
+allowBuilds:
+  esbuild: false
+
+minimumReleaseAge: 720

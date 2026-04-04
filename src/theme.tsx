@@ -18,7 +18,7 @@ export default function getTheme(prefersDarkMode: boolean): Theme {
       },
       typography: {
         fontWeightMedium: 600,
-        fontFamily: "'Nunito', sans-serif",
+        fontFamily: "'Nunito Variable', sans-serif",
         fontSize: 17,
         h1: {
           fontSize: "3rem",

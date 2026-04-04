@@ -2,7 +2,7 @@ import { CssBaseline } from "@mui/material";
 import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useEffect, useState } from "react";
-import getTheme from "theme";
+import getTheme from "../theme";
 
 type Props = {
   children: React.ReactNode;
@@ -14,7 +14,7 @@ export default function ThemeProvider({ children }: Props) {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   useEffect(() => {
-    if (process.browser) {
+    if (window) {
       setTheme(getTheme(prefersDarkMode));
     }
   }, [prefersDarkMode]);

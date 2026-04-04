@@ -4,10 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "export": "next build && next export",
-    "start": "next start",
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "pnpx srvx --prod -s ../client dist/server/server.js",
     "lint": "eslint .",
     "format": "prettier --write .",
     "type-check": "tsc --pretty --noEmit"
@@ -15,25 +15,28 @@
   "dependencies": {
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
-    "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.14.1",
-    "@mui/material": "^7.3.6",
-    "@mui/material-nextjs": "^7.3.6",
-    "next": "^16.1.1",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "@fontsource-variable/nunito": "^5.2.7",
+    "@mui/material": "^7.3.9",
+    "@tanstack/react-router": "^1.168.10",
+    "@tanstack/react-router-devtools": "^1.166.11",
+    "@tanstack/react-start": "^1.167.16",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
-    "@types/node": "^24.10.4",
-    "@types/react": "^19.2.7",
-    "eslint": "^9.39.2",
-    "eslint-config-next": "^16.1.1",
+    "@types/node": "^24.12.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
-    "prettier": "^3.7.4",
-    "typescript": "~5.9.3"
+    "prettier": "^3.8.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.3"
   },
   "engines": {
-    "node": "^24.11.0"
+    "node": "^24.14.0"
   },
-  "packageManager": "pnpm@10.27.0"
+  "packageManager": "pnpm@10.33.0"
 }
