@@ -2,12 +2,12 @@
 import createCache from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
 import fontsourceVariableNunitoCss from "@fontsource-variable/nunito?url";
-import { Container, CssBaseline } from "@mui/material";
+import { Container, CssBaseline, ThemeProvider } from "@mui/material";
 import { HeadContent, Outlet, Scripts, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import React from "react";
 import Footer from "../components/Footer";
-import ThemeProvider from "../context/themeContext";
+import { theme } from "../theme";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -66,7 +66,7 @@ function Providers({ children }: { children: React.ReactNode }) {
 
   return (
     <CacheProvider value={emotionCache}>
-      <ThemeProvider>
+      <ThemeProvider theme={theme}>
         <CssBaseline />
         {children}
       </ThemeProvider>
