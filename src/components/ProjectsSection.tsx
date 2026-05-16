@@ -12,7 +12,13 @@ export default function ProjectsSection(props: Props) {
   ));
 
   return (
-    <Grid container spacing={3} alignItems="stretch">
+    <Grid
+      container
+      spacing={3}
+      sx={{
+        alignItems: "stretch",
+      }}
+    >
       {projects}
     </Grid>
   );

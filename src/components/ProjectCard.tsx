@@ -14,7 +14,7 @@ export default function ProjectCard({ project }: Props) {
       }}
     >
       <Card variant="outlined" sx={{ height: "100%", p: 4 }}>
-        <Grid container direction="column" sx={{ height: "100%" }}>
+        <Grid container sx={{ height: "100%", flexDirection: "column" }}>
           <Grid>
             <Typography variant="h2" sx={{ mb: 1, color: project.titleColor }}>
               {project.title}
@@ -42,7 +42,7 @@ export default function ProjectCard({ project }: Props) {
               </>
             ) : null}
           </Grid>
-          <Grid sx={{ display: "flex", flexGrow: 1, flexShrink: 1, mt: 3 }} alignItems="flex-end">
+          <Grid sx={{ display: "flex", flexGrow: 1, flexShrink: 1, mt: 3, alignItems: "flex-end" }}>
             {project.isWebScreenshot === true ? (
               <Box
                 sx={{
