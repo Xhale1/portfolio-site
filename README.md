@@ -6,7 +6,7 @@ Static website showcasing projects by myself, Reece Carolan.
 
 - [React.js 19](https://react.dev/)
 - [Tanstack Start](https://tanstack.com/start/latest/)
-- [MUI 7](https://mui.com/)
+- [MUI 9](https://mui.com/)
 - Typescript, Oxlint, and Oxfmt are used to improve the developer experience
 
 ## Project Info
