@@ -2,6 +2,20 @@ import type Project from "../interfaces/project";
 
 export const projects: Project[] = [
   {
+    title: "Pangea Recipes",
+    date: "2024",
+    image: "/assets/pangea-recipes.png",
+    width: 1701,
+    height: 1200,
+    description:
+      "A modern recipe app built with sharing in mind. Create and collaborate on recipe books!",
+    subtitleDescription:
+      "React SSR, Postgres, Typescript, Node.js, Tanstack Start, OpenAI, Prisma, Railway",
+    links: [{ name: "Source code", url: "https://github.com/hello-pangea/pangea-recipes" }],
+    isWide: false,
+    titleColor: "#4f46e5",
+  },
+  {
     title: "HelloPeople",
     date: "2020",
     image: "/assets/HelloPeople.png",
@@ -12,7 +26,7 @@ export const projects: Project[] = [
     subtitleDescription:
       "Swift 5, UIKit, Google Cloud Platform (Firestore, Cloud Functions, Auth), TypeScript, React.js, Next.js, Node.js",
     links: [{ name: "Source code", url: "https://github.com/hellopeople-io" }],
-    isWide: true,
+    isWide: false,
     titleColor: "#0069c0",
   },
   {
