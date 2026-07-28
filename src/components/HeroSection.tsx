@@ -10,13 +10,13 @@ export default function HeroSection() {
       <Grid
         size={{
           xs: 12,
-          md: 6,
+          md: 9,
         }}
       >
         <Typography variant="h1">Reece Carolan</Typography>
         <Typography variant="body1">
-          Founding full-stack software engineer at{" "}
-          <Link href="https://www.trainwell.net">trainwell</Link>.
+          Founding fullstack software engineer at{" "}
+          <Link href="https://www.trainwell.net">Trainwell</Link>.
         </Typography>
         <Box
           sx={{

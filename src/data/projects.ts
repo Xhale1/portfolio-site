@@ -87,7 +87,7 @@ export const projects: Project[] = [
     width: 700,
     height: 350,
     description:
-      "I developed and hosted 18 websites serving over two million people under a company I co-founded.",
+      "I developed and hosted 18 websites serving over two million people under an eco-friendly company I co-founded. We sold in 2020.",
     subtitleDescription:
       "Wordpress, Cloudflare, Graphic Design (Adobe Photoshop, Illustrator, and InDesign)",
     links: [{ name: "One of my sites", url: "https://lensfirefilms.com/" }],
@@ -113,13 +113,13 @@ export const projects: Project[] = [
     width: 350,
     height: 350,
     description: "This website was designed to communicate my past work as clearly as possible.",
-    subtitleDescription: "React.js, Next.js, TypeScript, Cloudflare",
+    subtitleDescription: "React.js, Tanstack Start, TypeScript, Cloudflare",
     links: [{ name: "Source code", url: "https://github.com/Xhale1/portfolio-site" }],
     isWide: false,
     titleColor: "#0069c0",
   },
   {
-    title: "Yeats",
+    title: "Yeats (hackathon)",
     date: "2020",
     image: "/assets/yeats.png",
     width: 175,

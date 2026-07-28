@@ -25,7 +25,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Hello! I'm a fullstack and iOS developer with a passion for user experience and communication.",
+          "Hello hello! I'm a fullstack software engineer with a passion for ux and communication.",
       },
     ],
     links: [
