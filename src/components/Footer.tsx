@@ -5,12 +5,17 @@ export default function Footer() {
     <Box component="footer" sx={{ py: 3 }}>
       <Typography variant="body2" align="center">
         {"Built with "}
-        <Link color="inherit" target="_blank" rel="noopener" href="https://reactjs.org/">
+        <Link color="inherit" target="_blank" rel="noopener" href="https://react.dev/">
           React.js
         </Link>
         {" and "}
-        <Link color="inherit" target="_blank" rel="noopener" href="https://nextjs.org/">
-          Next.js
+        <Link
+          color="inherit"
+          target="_blank"
+          rel="noopener"
+          href="https://tanstack.com/start/latest"
+        >
+          Tanstack Start
         </Link>
       </Typography>
       <Typography variant="body2" align="center">
